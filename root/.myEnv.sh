@@ -26,26 +26,27 @@ if [ "$osType" = "MAC" ]; then
   export myWrite="~/Documents/Text/Write"
   export myDownloads="~/Documents/Downloads"
   export myGit="~/Git"
+  export gitScripts="~/Git/dotFiles/scripts"
   export myOffice="~/Documents/Office/"
-  export pwdCloud="//Path/To/Folder"
-  export pwdMedia="//Path/To/Folder"
-  export pwdCamera="//Path/To/Folder"
-  export UserR="//Path/To/Folder"
-  export UserK="//Path/To/Folder"
-  export UserT="//Path/To/Folder"
+  export pwdCloud="//Volumes/SSD/Cloud"
+  export pwdMedia="//Volumes/HDD/Media"
+  export pwdCamera="//Volumes/Camera/Camera"
+  export UserR="//Volumes/Data/Users/rowen"
+  export UserK="//Volumes/Data/Users/kalin"
+  export UserT="//Volumes/Data/Users/trista"
 fi
 
 # Set Variables
-export userGroupS="user:group"
-export userGroupA="user:group"
+export userGroupS="elecknight:staff"
+export userGroupA="elecknight:admin"
 export Editor="nvim"
 export eSessions="~/.config/nvim/sessions"
 if [ "$Editor" = "vim" ]; then
   export eSessions="~/.vim/sessions"
 fi
-export ServerE="user@adress"
+export ServerE="elecknight@192.168.1.100"
 
 # Set Paths
 # Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$myScripts:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$gitScripts:$myScripts:$HOME/bin:/usr/local/bin:$PATH
 

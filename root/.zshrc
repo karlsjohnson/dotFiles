@@ -124,3 +124,6 @@ test -e ~/.iterm2SI.zsh && source ~/.iterm2SI.zsh
 # Run MyInit
 [ -f ~/.myInit.sh ] && source ~/.myInit.sh
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

@@ -59,33 +59,42 @@ alias reboot="sudo shutdown -r now"
 alias itl="it2prof Light"
 alias itd="it2prof Dark"
 
+# Git
+
+alias gtac="git commit -am \"%1\""
+alias gts="git status"
+function gtcp {
+  git add .
+  git commit -m "$1"
+  git push
+}
 # Tmux
-alias stm="tmux source-file ~/.tmux.conf"
+alias tmsc="tmux source-file ~/.tmux.conf"
+alias tm="tmux"
+alias tmn="t new -t"
+alias tma="tmux a"
+alias tman="t a -t"
 alias tmls="tmux ls"
 alias tmksr="tmux kill-server"
 alias tmkss="tmux kill-session"
-alias tmaf="tmux attach -t first"
-alias tmnf="tmux new -s first"
-alias tma="tmux attach -t"
-alias tmn="tmux new -s"
 
 # Text Editor
-alias et="$Editor --cmd 'cd $myText'"
-alias eg="$Editor --cmd 'cd $myGit'"
-alias ett="$Editor --cmd 'cd $myText' $myWrite/Tasks.md"
-alias etl="$Editor --cmd 'cd $myText' $myWrite/Links.md"
-alias erz="$Editor ~/.zshrc.zsh"
-alias eri="$Editor ~/.myInit.sh"
-alias ere="$Editor ~/.myEnv.sh"
-alias erv="$Editor ~/.config/nvim/init.vim"
+alias nv="nvim"
+alias nvt="$Editor --cmd 'cd $myText'"
+alias nvg="$Editor --cmd 'cd $myGit'"
+alias nvfs="$Editor --cmd 'cd $myText' $myWrite/Start.md"
+alias nvfl="$Editor --cmd 'cd $myText' $myWrite/Links.md"
+alias nvfi="$Editor ~/.myInit.sh"
+alias nvfe="$Editor ~/.myEnv.sh"
 # Test Editor Sessions
-alias esc="$Editor -S $eSessions/current.vim --cmd 'cd $myText'"
-alias esd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $myText'"
-alias esw="$Editor -S $eSessions/write.vim --cmd 'cd $myText/Write'"
-alias esn="$Editor -S $eSessions/new.vim --cmd 'cd $myText'"
+alias nvsc="$Editor -S $eSessions/current.vim --cmd 'cd $myText'"
+alias nvsd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $myText'"
+alias nvsw="$Editor -S $eSessions/write.vim --cmd 'cd $myText/Write'"
+alias nvsg="$Editor -S $eSessions/git.vim --cmd 'cd $myGit'"
 
 # Run Act.sh
-alias act='act.sh'
+alias ac='act.sh'
+alias ag='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 
 #endregion
@@ -234,6 +243,7 @@ alias gdt="cd '$myText'"
 alias gdd="cd ~/Documents"
 alias gdw="cd '$myDownload'"
 alias gdp="cd ~/Desktop"
+alias gdg="cd ~/Git"
 
 fi
 #endregion

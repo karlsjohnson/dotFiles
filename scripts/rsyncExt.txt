@@ -1,0 +1,10 @@
+.gnupg
+.bash_history
+.DS_Store
+.localized
+lost+found
+*.keychain
+Caches/
+__Caches/
+__Logs
+autoload
