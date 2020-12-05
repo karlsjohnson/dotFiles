@@ -70,23 +70,30 @@ function gtcp {
   git push
 }
 # Tmux
-alias tmsc="tmux source-file ~/.tmux.conf"
-alias tm="tmux"
-alias tmn="t new -t"
-alias tma="tmux a"
-alias tman="t a -t"
-alias tmls="tmux ls"
-alias tmksr="tmux kill-server"
-alias tmkss="tmux kill-session"
+alias tsc="tmux source-file ~/.tmux.conf"
+alias t="tmux"
+alias tn="t new -t"
+alias ta="tmux a"
+alias tan="t a -t"
+alias tls="tmux ls"
+alias tk="tmux kill-server"
+alias tkss="tmux kill-session"
+
+# Git
+alias g="git"
+alias gs="git status"
+alias gm="git commit -m \""
+alias ga="git add *"
+alias gma="git commit -am \""
+alias gh="git push"
+alias gl="git pull"
+
 
 # Text Editor
-alias nv="nvim"
-alias nvt="$Editor --cmd 'cd $myText'"
-alias nvg="$Editor --cmd 'cd $myGit'"
-alias nvfs="$Editor --cmd 'cd $myText' $myWrite/Start.md"
-alias nvfl="$Editor --cmd 'cd $myText' $myWrite/Links.md"
-alias nvfi="$Editor ~/.myInit.sh"
-alias nvfe="$Editor ~/.myEnv.sh"
+alias e="nvim"
+alias et="$Editor --cmd 'cd $myText'"
+alias eg="$Editor --cmd 'cd $myGit'"
+alias efs="$Editor --cmd 'cd $myText' $myWrite/Start.md"
 # Test Editor Sessions
 alias nvsc="$Editor -S $eSessions/current.vim --cmd 'cd $myText'"
 alias nvsd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $myText'"
