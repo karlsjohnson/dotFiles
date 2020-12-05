@@ -1,7 +1,8 @@
 Git ~/Git
 nvim ~/.config/nvim
 Root ~/
+Scripts ~/Documents/Apps/Scripts
+Start ~/Documents/Text/Write/Start.md
 Text ~/Documents/Text
 Write ~/Documents/Text/Write
-Link ~/Documents/Text/Write/Links.md
-Start ~/Documents/Text/Write/Start.md
+

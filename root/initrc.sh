@@ -1,9 +1,10 @@
 # My Initialization Process for All Mac Command Lines 
 # Roadmap: use for linux as well.
 
-# Sedt Enivormental Variables
-[ -f ~/.myEnv.sh ] && source ~/.myEnv.sh
-
+# Set Enivormental Variables
+[ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
+# Set My Personal Veriables
+[ -f ~/Documents/Apps/Support/myEnv.sh ] && source ~/Documents/Apps/Support/myEnv.sh
 
 #endregion
 #----------------------------------------#
@@ -93,7 +94,7 @@ alias nvsw="$Editor -S $eSessions/write.vim --cmd 'cd $myText/Write'"
 alias nvsg="$Editor -S $eSessions/git.vim --cmd 'cd $myGit'"
 
 # Run Act.sh
-alias ac='act.sh'
+alias ac='Bash ~/Documents/Apps/Scripts/act.sh'
 alias ag='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 

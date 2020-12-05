@@ -122,7 +122,7 @@ test -e ~/.iterm2SI.zsh && source ~/.iterm2SI.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Run MyInit
-[ -f ~/.myInit.sh ] && source ~/.myInit.sh
+[ -f ~/Git/dotFiles/root/initrc.sh ] && source  ~/Git/dotFiles/root/initrc.sh
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
