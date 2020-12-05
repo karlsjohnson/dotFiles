@@ -25,20 +25,14 @@ case $1 in
 
 #rsRoot-----Restore Root Files from Text
   rsRoot)
-    cp -f $dotFiles/oh-my-zsh.sh ~/.oh-my-zsh/
-    cp -f $dotFiles/.fzf.zsh ~
-    cp -f $dotFiles/.p10k.zsh ~
-    cp -f $dotFiles/.NERDTreeBookmarks ~
-    cp -f $dotFiles/.tmux.conf ~
-    cp -f $dotFiles/.vimrc ~
-    cp -f $dotFiles/.zlogout ~
-    cp -f $dotFiles/.zshrc ~
-    cp -f $dotFiles/.myInit.sh ~
-    cp -f $dotFiles/.myEnv.sh ~
-    rsync $rOpt $dotFiles/config/ ~/.config
-    rsync $rOpt $dotFiles/tmux/ ~/.tmux
-    rsync $rOpt $dotFiles/vim/sessions ~/.vim
-    rsync $rOpt $dotFiles/vim/colors ~/.vim
+    cp -f $dotFiles/root/oh-my-zsh.sh ~/.oh-my-zsh/
+    cp -f $dotFiles/root/.fzf.zsh ~
+    cp -f $dotFiles/root/.p10k.zsh ~
+    cp -f $dotFiles/root/.NERDTreeBookmarks ~
+    cp -f $dotFiles/root/.tmux.conf ~
+    cp -f $dotFiles/root/.zlogout ~
+    cp -f $dotFiles/root/.zshrc ~
+    rsync $rOpt $dotFiles/nvim/ ~/.config/nvim/
    ;;
 
 
