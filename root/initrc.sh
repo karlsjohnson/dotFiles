@@ -79,6 +79,7 @@ alias gca="git commit -am \""
 alias gh="git push"
 alias gl="git pull"
 
+# Complete Git Add,Commit,Push
 function gch {
   git commit -am "$1"
   git push
