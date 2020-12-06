@@ -60,15 +60,6 @@ alias reboot="sudo shutdown -r now"
 alias itl="it2prof Light"
 alias itd="it2prof Dark"
 
-# Git
-
-alias gtac="git commit -am \"%1\""
-alias gts="git status"
-function gtcp {
-  git add .
-  git commit -m "$1"
-  git push
-}
 # Tmux
 alias tsc="tmux source-file ~/.tmux.conf"
 alias t="tmux"
@@ -82,12 +73,18 @@ alias tkss="tmux kill-session"
 # Git
 alias g="git"
 alias gs="git status"
-alias gm="git commit -m \""
+alias gc="git commit -m \""
 alias ga="git add *"
-alias gma="git commit -am \""
+alias gca="git commit -am \""
 alias gh="git push"
 alias gl="git pull"
 
+function gch {
+echo $1
+  git commit -am "$1"
+#  git push
+#  git status
+}
 
 # Text Editor
 alias e="nvim"
@@ -95,10 +92,9 @@ alias et="$Editor --cmd 'cd $myText'"
 alias eg="$Editor --cmd 'cd $myGit'"
 alias efs="$Editor --cmd 'cd $myText' $myWrite/Start.md"
 # Test Editor Sessions
-alias nvsc="$Editor -S $eSessions/current.vim --cmd 'cd $myText'"
-alias nvsd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $myText'"
-alias nvsw="$Editor -S $eSessions/write.vim --cmd 'cd $myText/Write'"
-alias nvsg="$Editor -S $eSessions/git.vim --cmd 'cd $myGit'"
+alias esc="$Editor -S $eSessions/current.vim --cmd 'cd $Text'"
+alias esd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $Git'"
+alias esg="$Editor -S $eSessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
 alias ac='Bash ~/Documents/Apps/Scripts/act.sh'
