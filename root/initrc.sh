@@ -80,10 +80,9 @@ alias gh="git push"
 alias gl="git pull"
 
 function gch {
-echo $1
   git commit -am "$1"
-#  git push
-#  git status
+  git push
+  git status
 }
 
 # Text Editor
