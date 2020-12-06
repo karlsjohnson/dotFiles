@@ -88,13 +88,13 @@ function gch {
 
 # Text Editor
 alias e="nvim"
-alias et="$Editor --cmd 'cd $myText'"
-alias eg="$Editor --cmd 'cd $myGit'"
-alias efs="$Editor --cmd 'cd $myText' $myWrite/Start.md"
+alias et="nvim --cmd 'cd $myText'"
+alias eg="nvim --cmd 'cd $myGit'"
+alias efs="nvim --cmd 'cd $myText' $myWrite/Start.md"
 # Test Editor Sessions
-alias esc="$Editor -S $eSessions/current.vim --cmd 'cd $Text'"
-alias esd="$Editor -S $eSessions/dotfiles.vim --cmd 'cd $Git'"
-alias esg="$Editor -S $eSessions/git.vim --cmd 'cd $Git'"
+alias esc="nvim -S $eSessions/current.vim --cmd 'cd $Text'"
+alias esd="nvim -S $eSessions/dotfiles.vim --cmd 'cd $Git'"
+alias esg="nvim -S $eSessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
 alias ac='Bash ~/Documents/Apps/Scripts/act.sh'
