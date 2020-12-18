@@ -128,21 +128,20 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 "======Open Files
 nnoremap <Leader>fv :e $MYVIMRC<CR>
-nnoremap <Leader>fs :e $myWrite/Start.md<CR>
-nnoremap <Leader>fl :e $myWrite/Links.md<CR>
-nnoremap <Leader>fi :e ~/.myInit.sh<CR>
-nnoremap <Leader>fe :e ~/.myEnv.sh<CR>
-nnoremap <Leader>fz :e ~/.zshrc<CR>
+nnoremap <Leader>fs :e $Text/Write/Start.md<CR>
+nnoremap <Leader>fl :e $Text/Write/Links.md<CR>
+nnoremap <Leader>fi :e $Git/dotFiles/root/initrc.sh<CR>
+nnoremap <Leader>fe :e $Git/dotFiles/root/initEnv.sh<CR>
 nnoremap <Leader>fx :e ~/.tmux.conf<CR>
-nnoremap <Leader>fa :e $myScripts/act.sh<CR>
+nnoremap <Leader>fa :e $Scripts/act.sh<CR>
 
 
 "======Go to directories
 nnoremap <Leader>dl :pwd<CR>
 nnoremap <Leader>dr :cd ~<CR>
-nnoremap <Leader>dt :cd $myText<CR>
+nnoremap <Leader>dt :cd $Text<CR>
 nnoremap <Leader>dd :cd ~/Documents<CR>
-nnoremap <Leader>dw :cd $myDownloads<CR>
-nnoremap <Leader>dg :cd $myGit<CR>
+nnoremap <Leader>dw :cd $Downloads<CR>
+nnoremap <Leader>dg :cd $Git<CR>
 nnoremap <Leader>dp :cd ~/Desktop<CR>
 

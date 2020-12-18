@@ -2,17 +2,15 @@ let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Documents/Text
+cd ~/Git
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +14 ~/.config/nvim/init.vim
-badd +27 ~/.config/nvim/themes/onedark.vim
-badd +21 ~/.config/nvim/plugins/airline.vim
+badd +36 ~/.tmux.conf
 argglobal
 %argdel
-edit ~/.config/nvim/plugins/airline.vim
+edit ~/.tmux.conf
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -29,12 +27,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 33 - ((32 * winheight(0) + 25) / 51)
+let s:l = 36 - ((23 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-33
-normal! 0
+36
+normal! 049|
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

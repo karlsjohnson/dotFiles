@@ -16,10 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "======Plug.vim Plugins Add
   " Better Syntax Support
   Plug 'sheerun/vim-polyglot'
-  
+ 
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'joshdick/onedark.vim'
   Plug 'scrooloose/nerdtree'
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
@@ -32,9 +31,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'scuilion/markdown-drawer'
   Plug 'christoomey/vim-tmux-navigator'
 
+  " Themes
+  Plug 'joshdick/onedark.vim'
+  Plug 'karlsjohnson/gruvbox'
+  Plug 'karlsjohnson/vim-one'
+  Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+  Plug 'ayu-theme/ayu-vim'
 
-
-"======Plug.vim Plugins Add
+  "======Plug.vim Plugins Add
 call plug#end()
 
 

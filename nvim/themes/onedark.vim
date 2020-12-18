@@ -25,3 +25,5 @@ endif
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ }
+
+set background=dark                     " tell vim what the background color looks like

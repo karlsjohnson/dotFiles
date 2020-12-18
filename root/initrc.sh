@@ -31,6 +31,8 @@ alias rm='rm -f'
 alias cpd='rsync -ah --progress '
 # Copy Files
 alias cp='cp -f'
+# Copy Path to Clipboard
+alias pcopy='pwd|pbcopy'
 
 # Size of Disks on Computer
 alias dsize="df -h"
@@ -57,8 +59,9 @@ alias shutdown="sudo shutdown -P now"
 alias reboot="sudo shutdown -r now"
 
 # iTerm 
-alias itl="it2prof Light"
-alias itd="it2prof Dark"
+alias itl="it2prof OneLight"
+alias itd="it2prof OneDark"
+alias itg="it2prof Gruvbox"
 
 # Tmux
 alias tsc="tmux source-file ~/.tmux.conf"
@@ -78,23 +81,26 @@ alias ga="git add *"
 alias gca="git commit -am \""
 alias gh="git push"
 alias gl="git pull"
+alias gcl="git clone"
+alias gr="git ls-files --deleted -z | xargs -0 git rm"
 
 # Complete Git Add,Commit,Push
 function gch {
-  git commit -am "$1"
+  git add *
+  git commit -m "$1"
   git push
   git status
 }
 
 # Text Editor
 alias e="nvim"
-alias et="nvim --cmd 'cd $myText'"
-alias eg="nvim --cmd 'cd $myGit'"
-alias efs="nvim --cmd 'cd $myText' $myWrite/Start.md"
+alias et="nvim --cmd 'cd $Text'"
+alias eg="nvim --cmd 'cd $Git'"
+alias es="nvim --cmd 'cd $Git' $Git/Thoughts/Start.md"
 # Test Editor Sessions
-alias esc="nvim -S $eSessions/current.vim --cmd 'cd $Text'"
-alias esd="nvim -S $eSessions/dotfiles.vim --cmd 'cd $Git'"
-alias esg="nvim -S $eSessions/git.vim --cmd 'cd $Git'"
+alias esc="nvim -S $Sessions/current.vim"
+alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
+alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
 alias ac='Bash ~/Documents/Apps/Scripts/act.sh'

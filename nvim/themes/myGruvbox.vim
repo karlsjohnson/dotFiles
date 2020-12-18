@@ -1,5 +1,5 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: myGruvbox.vim
 " Description: Retro groove color scheme for Vim
 " Author: morhetz <morhetz@gmail.com>
 " Source: https://github.com/morhetz/gruvbox
@@ -16,7 +16,7 @@ if version > 580
   endif
 endif
 
-let g:colors_name='gruvbox'
+let g:colors_name='myGruvbox'
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
   finish
