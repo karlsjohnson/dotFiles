@@ -80,7 +80,7 @@ alias gc="git commit -m \""
 alias ga="git add *"
 alias gca="git commit -am \""
 alias gh="git push"
-alias gl="git pull origin master"
+alias gl="git pull -ff-only"
 alias gcl="git clone"
 alias gr="git ls-files --deleted -z | xargs -0 git rm"
 
