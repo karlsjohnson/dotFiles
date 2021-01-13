@@ -4,7 +4,7 @@
 # Set Enivormental Variables
 [ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
 # Set My Personal Veriables
-[ -f ~/Documents/Apps/Support/myEnv.sh ] && source ~/Documents/Apps/Support/myEnv.sh
+[ -f ~/Documents/Apps/Support/myEnv.sh ] && source ~/Documents/Text/Bin/myEnv.sh
 
 #endregion
 #----------------------------------------#
