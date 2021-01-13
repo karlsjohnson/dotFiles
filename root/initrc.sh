@@ -249,11 +249,14 @@ if [ "$osType" = "MAC" ]; then
 # ----Vim files
 
 # goto folders
-alias gdt="cd '$myText'"
-alias gdd="cd ~/Documents"
-alias gdw="cd '$myDownload'"
-alias gdp="cd ~/Desktop"
-alias gdg="cd ~/Git"
+alias cdt="cd '$Text'"
+alias cdb="cd '$Text'/Bin"
+alias cdd="cd ~/Documents"
+alias cdw="cd '$Downloads'"
+alias cdp="cd ~/Desktop"
+alias cdg="cd ~/Git"
+alias cdr="cd ~/"
+alias cddf="cd ~/Git/dotFiles"
 
 fi
 #endregion
