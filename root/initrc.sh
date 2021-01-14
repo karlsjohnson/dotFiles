@@ -103,7 +103,7 @@ alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
-alias ac='Bash ~/Documents/Apps/Scripts/act.sh'
+alias ac='Bash ~/Documents/Text/Bin/act.sh'
 alias ag='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 
@@ -141,6 +141,12 @@ function panVert {
 function zipD {
   zip -r "$1".zip "$1"/*
 }
+
+# Zip directory at $1
+function zipCD {
+  zip -r "$(basename $PWD)".zip *
+}
+
 
 # Unzip directoy at $1
 function unzipD {
