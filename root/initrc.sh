@@ -263,6 +263,7 @@ alias cdp="cd ~/Desktop"
 alias cdg="cd ~/Git"
 alias cdr="cd ~/"
 alias cddf="cd ~/Git/dotFiles"
+alias cdth="cd ~/Git/Thoughts"
 
 fi
 #endregion
