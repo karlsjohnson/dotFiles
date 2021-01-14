@@ -6,6 +6,8 @@
 # Set My Personal Veriables
 [ -f ~/Documents/Apps/Support/myEnv.sh ] && source ~/Documents/Text/Bin/myEnv.sh
 
+
+
 #endregion
 #----------------------------------------#
 #region -----Aliases_All-----
@@ -264,24 +266,21 @@ alias cdg="cd ~/Git"
 alias cdr="cd ~/"
 alias cddf="cd ~/Git/dotFiles"
 alias cdth="cd ~/Git/Thoughts"
-
 fi
 #endregion
 #----------------------------------------#
 #region -----Laptop Only Tools-----
-
-if [ "$comType" = "Laptop" ]; then
+if [ "$comType" = "MacBook" ]; then
 
   # ----Aliases----
   # logon to MacMini
   alias mom="mosh $ServerE"
-  alias shm=" ssh $ServerE"
-  
+  alias shm="ssh $ServerE"
 fi
 #endregion
 #----------------------------------------#
 #region -----Desktop Only Tools-----
-if [ "$comType" = "Desktop" ]; then
+if [ "$comType" = "MacMini" ]; then
   
   #----Variables----
 
@@ -296,6 +295,5 @@ fi
 
 #endregion
 #----------------------------------------#
-
 echo "My Initialization Process For $comType Complete"
 #endregion
