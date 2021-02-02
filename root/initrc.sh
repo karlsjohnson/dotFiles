@@ -4,7 +4,7 @@
 # Set Enivormental Variables
 [ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
 # Set My Personal Veriables
-[ -f ~/.myEnv.sh ] && source ~/.myEnv.sh
+[ -f ~/Documents/Text/Bin/.myEnv.sh ] && source ~/Documents/Text/Bin/.myEnv.sh
 
 
 
@@ -208,19 +208,19 @@ alias dport="sudo netstat -tulpn | grep LISTEN"
 # Docker Compose Tools
 
 # Builds, (re)creates, starts, and attaches to containers for a service.
-alias dcup="docker-compose -f $DOCKER/docker-compose.yml up -d"
+alias dcup="docker-compose -f $DOCKERC up -d"
 # Stops containers and removes containers, networks, volumes, and images created by up.
-alias dcdown="docker-compose -f $DOCKER/docker-compose.yml down"
+alias dcdown="docker-compose -f $DOCKERC down"
 # lists containers related to images declared in docker-compose file
-alias dcls="docker-compose -f $DOCKER/docker-compose.yml ps"
+alias dcls="docker-compose -f $DOCKERC ps"
 # Restarts all stopped and running services
-alias dcrestart="docker-compose -f $DOCKER/docker-compose.yml restart"
+alias dcrestart="docker-compose -f $DOCKERC restart"
 # Start containers that were previously created, but were stopped. It never creates new containers.
-alias dcstart="docker-compose -f $DOCKER/docker-compose.yml start -d"
+alias dcstart="docker-compose -f $DOCKERC start -d"
 #Stops running containers without removing them. They can be started again with 
-alias dcstop="docker-compose -f $DOCKER/docker-compose.yml stop"
+alias dcstop="docker-compose -f $DOCKERC stop"
 # Removes stopped service containers.
-alias dcrm="docker-compose -f $DOCKER/docker-compose.yml rm"
+alias dcrm="docker-compose -f $DOCKERC rm"
 
 
 # Docker Update
