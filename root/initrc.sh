@@ -105,8 +105,8 @@ alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
-alias do='Bash ~/Documents/Text/Bin/do.sh'
-alias ag='Bash ~/git/dotFiles/scripts/gitAct.sh'
+alias act='Bash ~/Documents/Text/Bin/act.sh'
+alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 
 #endregion
@@ -161,8 +161,8 @@ function unzipD {
 
 # Allow mosh through firewall
 function AllowMosh {
-  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add /usr/local/Cellar/mosh/1.3.2_12/bin/mosh-server
-  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp /usr/local/Cellar/mosh/1.3.2_12/bin/mosh-server
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add /usr/local/Cellar/mosh/1.3.2_14/bin/mosh-server
+  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp /usr/local/Cellar/mosh/1.3.2_14/bin/mosh-server
 }
 
 function showf {
@@ -274,8 +274,10 @@ if [ "$comType" = "MacBook" ]; then
 
   # ----Aliases----
   # logon to MacMini
-  alias mom="mosh $ServerE"
-  alias shm="ssh $ServerE"
+  alias moip="mosh $ServerIP"
+  alias momm="mosh $ServerMM"
+  alias ship="ssh $ServerIP"
+  alias shmm="ssh $ServerMM"
 fi
 #endregion
 #----------------------------------------#
