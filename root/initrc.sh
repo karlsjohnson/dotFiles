@@ -105,7 +105,7 @@ alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 
 # Run Act.sh
-alias ac='Bash ~/Documents/Text/Bin/act.sh'
+alias do='Bash ~/Documents/Text/Bin/do.sh'
 alias ag='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 
