@@ -1,10 +1,10 @@
 # My Initialization Process for All Mac Command Lines 
 # Roadmap: use for linux as well.
 
-# Set Enivormental Variables
-[ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
 # Set My Personal Veriables
 [ -f ~/Documents/Text/Bin/myEnv.sh ] && source ~/Documents/Text/Bin/myEnv.sh
+# Set Enivormental Variables
+[ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
 
 
 
