@@ -1,178 +1,29 @@
 # My Initialization Process for All Mac Command Lines 
 # Roadmap: use for linux as well.
 
+# ----------Call Setup Variables--------------
+
+# Set location of files
+dotRoot=~/Git/dotFiles/root
+dotBin=~/Documents/Text/Bin
+
 # Set My Personal Veriables
-[ -f ~/Documents/Text/Bin/myEnv.sh ] && source ~/Documents/Text/Bin/myEnv.sh
-# Set Enivormental Variables
-[ -f ~/Git/dotFiles/root/initEnv.sh ] && source ~/Git/dotFiles/root/initEnv.sh
+source $dotBin/myEnv.sh
+# Set Standard Enivormental Variables
+source $dotRoot/initEnv.sh
 
+# ----------Call Setup Files--------------
 
+# Aliases All
+source $dotRoot/initAliasAll.sh
 
-#endregion
-#----------------------------------------#
-#region -----Aliases_All-----
-
-# Source init files
-alias szsh=". ~/.zshrc"
-
-# Copy Path to Clipboard
-alias cpath="pwd|pbcopy"
-
-# List Files
-alias la='ls -a'
-alias ll="ls -lha"
-alias lls="ls -lhSa"
-alias llt="ls -lhta"
-
-# Remove Folder by Force
-alias rmd='rm -rf'
-# Remove Files by Force
-alias rm='rm -f'
-
-# Copy =Folder
-alias cpd='rsync -ah --progress '
-# Copy Files
-alias cp='cp -f'
-# Copy Path to Clipboard
-alias pcopy='pwd|pbcopy'
-
-# Size of Disks on Computer
-alias dsize="df -h"
-
-# Size of items in currently directory
-alias fsize="du -hsc *"
-
-# View tree with level set at $1 (First augument)
-# tree --du -h -L 2, is 2 levels deep
-alias fdtree="tree --du -h -L"
-
-# set file permission to 770 rwxrwx---
-alias ownES='sudo chown $userGroupS'
-alias ownrES='sudo chown -R $userGroupS'
-alias ownEA='sudo chown $userGroupA'
-alias ownrEA='sudo chown -R $userGroupA'
-
-# Permissions
-alias pug="sudo chmod -R 770"
-alias pu="sudo chmod -R 700"
-
-# Reboot or shutdown
-alias shutdown="sudo shutdown -P now"
-alias reboot="sudo shutdown -r now"
-
-# iTerm 
-alias itl="it2prof OneLight"
-alias itd="it2prof OneDark"
-alias itg="it2prof Gruvbox"
-
-# Tmux
-alias tsc="tmux source-file ~/.tmux.conf"
-alias t="tmux"
-alias tn="t new -t"
-alias ta="tmux a"
-alias tan="t a -t"
-alias tls="tmux ls"
-alias tk="tmux kill-server"
-alias tkss="tmux kill-session"
-
-# Git
-alias g="git"
-alias gs="git status"
-alias gc="git commit -m \""
-alias ga="git add *"
-alias gca="git commit -am \""
-alias gh="git push"
-alias gl="git pull"
-alias gcl="git clone"
-alias gr="git ls-files --deleted -z | xargs -0 git rm"
-
-# Complete Git Add,Commit,Push
-function gch {
-  git add *
-  git commit -m "$1"
-  git push
-  git status
-}
-
-# Text Editor
-alias e="nvim"
-alias et="nvim --cmd 'cd $Text'"
-alias eg="nvim --cmd 'cd $Git'"
-alias es="nvim --cmd 'cd $Git' $Git/Thoughts/Start.md"
-# Test Editor Sessions
-alias esc="nvim -S $Sessions/current.vim"
-alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
-alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
-
-# Run Act.sh
-alias act='Bash ~/Documents/Text/Bin/act.sh'
-alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
-
+if [ "$osType" = "MAC" ]; then source $dotRoot/initMac.sh ; fi
 
 #endregion
 #----------------------------------------#
 #region -----Functions-----
 
-# Change iterm2 profile. Usage it2prof ProfileName (case sensitive)
-it2prof() { echo -e "\033]50;SetProfile=$1\a" }
 
-function eSwitch {
-  if [ "$Editor" = "nvim" ]; then
-    export Editor="vim"
-    export eSessions="~/.vim/sessions"
-    Echo "Editor now vim"
-  elif [ "$Editor" = "vim" ]; then
-    export Editor="nvim"
-    export eSessions="~/.config/nvim/sessions"
-    Echo "Editor now neovim"
-  fi
-}
-
-
-# Unknown
-function panVert {
-  sed -i -e 's/.md/.html/g' $2/$1.md
-  #echo "$2/template.html"
-  /usr/local/bin/pandoc -s $2/$1.md --toc --template=$2/template.html -o $3/$1.html
-  mv $2/$1.md-e $2/$1.md
-}
-
-
-
-# Zip directory at $1
-function zipD {
-  zip -r "$1".zip "$1"/*
-}
-
-# Zip directory at $1
-function zipCD {
-  zip -r "$(basename $PWD)".zip *
-}
-
-
-# Unzip directoy at $1
-function unzipD {
-  if [ -f "$1" ]; then
-    rm -rf "$1"
-  fi
-  #	mkdir "$1"
-  unzip "$1".zip
-}
-
-# Allow mosh through firewall
-function AllowMosh {
-  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add /usr/local/Cellar/mosh/1.3.2_14/bin/mosh-server
-  sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp /usr/local/Cellar/mosh/1.3.2_14/bin/mosh-server
-}
-
-function showf {
-  defaults write com.apple.finder AppleShowAllFiles TRUE
-  killall Finder
-}
-function hidef {
-  defaults write com.apple.finder AppleShowAllFiles FALSE
-  killall Finder
-}
 function MacUpdate {
   echo "brew update starting"
   brew update
