@@ -1,4 +1,4 @@
-# My Enviromental Variables
+# Initial Enviromental Variables
 
 # Determine Current Computer
 export sysType=$(scutil --get LocalHostName)
@@ -20,4 +20,3 @@ fi
 # Set Paths
 # Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$Scripts:$Bin:$PATH
-

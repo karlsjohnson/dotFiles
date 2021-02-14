@@ -11,18 +11,18 @@ source $dotBin/myEnv.sh
 # Set Standard Enivormental Variables
 source $dotRoot/initEnv.sh
 
-
-
 # ----------Call Setup Files--------------
 # Aliases All
-source $dotRoot/initAliasAll.sh
+source $dotRoot/initAlias.sh
 
 # Aliases Mac
 if [ "$osType" = "MAC" ]; then source $dotRoot/initMac.sh ; fi
 
+# Aliases MacBookPro
+if [ "$comType" = "MacBook" ]; then source $dotRoot/initMBP.sh ; fi
 
-
-
+# Aliases MacMini
+if [ "$comType" = "MacMini" ]; then source $dotRoot/initMM.sh ; fi
 
 # ----------Complete--------------
 echo "My Initialization Process For $comType Complete"

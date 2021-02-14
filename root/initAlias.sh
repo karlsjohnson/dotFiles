@@ -1,8 +1,6 @@
+# Initial Aliases for All
 
-
-#endregion
-#----------------------------------------#
-#region -----Aliases_All-----
+# ----------Standard Tool Aliases--------------
 
 # Source init files
 alias szsh=". ~/.zshrc"
@@ -38,6 +36,12 @@ alias fsize="du -hsc *"
 # tree --du -h -L 2, is 2 levels deep
 alias fdtree="tree --du -h -L"
 
+# Reboot or shutdown
+alias shutdown="sudo shutdown -P now"
+alias reboot="sudo shutdown -r now"
+
+# ----------User Aliases--------------
+
 # set file permission to 770 rwxrwx---
 alias ownES='sudo chown $userGroupS'
 alias ownrES='sudo chown -R $userGroupS'
@@ -48,9 +52,7 @@ alias ownrEA='sudo chown -R $userGroupA'
 alias pug="sudo chmod -R 770"
 alias pu="sudo chmod -R 700"
 
-# Reboot or shutdown
-alias shutdown="sudo shutdown -P now"
-alias reboot="sudo shutdown -r now"
+# ----------Program Aliases--------------
 
 # iTerm 
 alias itl="it2prof OneLight"
@@ -86,6 +88,8 @@ function gch {
   git status
 }
 
+# ----------Text Editing Aliases--------------
+
 # Text Editor
 alias e="nvim"
 alias et="nvim --cmd 'cd $Text'"
@@ -100,12 +104,9 @@ alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 alias act='Bash ~/Documents/Text/Bin/act.sh'
 alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
-echo "Test Done"
 
 
-
-
-# Docker Tools
+# ----------Docker Aliases--------------
 
 # List All Images
 alias dlsi="docker image ls -a"
@@ -167,4 +168,3 @@ function dRemove {
   docker rm $(docker ps -a -q)
   docker rmi $(docker images -q)
 }
-
