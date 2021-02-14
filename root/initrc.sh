@@ -3,7 +3,7 @@
 
 # ----------Call Setup Variables--------------
 # Set location of files
-dotRoot=~/Git/dotFiles/root
+dotRoot=
 dotBin=~/Documents/Text/Bin
 
 # Set My Personal Veriables
@@ -16,7 +16,7 @@ source $dotRoot/initEnv.sh
 source $dotRoot/initAlias.sh
 
 # Aliases Mac
-if [ "$osType" = "MAC" ]; then source $dotRoot/initMac.sh ; fi
+if [ "$osType" = "MAC" ]; then source ~/Git/dotFiles/root/initMac.sh ; fi
 
 # Aliases MacBookPro
 if [ "$comType" = "MacBook" ]; then source $dotRoot/initMBP.sh ; fi
