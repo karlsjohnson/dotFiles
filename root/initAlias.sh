@@ -8,6 +8,10 @@ alias szsh=". ~/.zshrc"
 # Copy Path to Clipboard
 alias cpath="pwd|pbcopy"
 
+# Reboot or shutdown
+alias shutdown="sudo shutdown -P now"
+alias reboot="sudo shutdown -r now"
+
 # List Files
 alias la='ls -a'
 alias ll="ls -lha"
@@ -23,8 +27,6 @@ alias rm='rm -f'
 alias cpd='rsync -ah --progress '
 # Copy Files
 alias cp='cp -f'
-# Copy Path to Clipboard
-alias pcopy='pwd|pbcopy'
 
 # Size of Disks on Computer
 alias dsize="df -h"
@@ -36,9 +38,6 @@ alias fsize="du -hsc *"
 # tree --du -h -L 2, is 2 levels deep
 alias fdtree="tree --du -h -L"
 
-# Reboot or shutdown
-alias shutdown="sudo shutdown -P now"
-alias reboot="sudo shutdown -r now"
 
 # ----------User Aliases--------------
 
@@ -52,73 +51,66 @@ alias ownrEA='sudo chown -R $userGroupA'
 alias pug="sudo chmod -R 770"
 alias pu="sudo chmod -R 700"
 
+# ----------Act Aliases--------------
+
+alias act='Bash ~/Documents/Text/Bin/act.sh'
+alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
+
 # ----------Program Aliases--------------
 
-# iTerm 
-alias itl="it2prof OneLight"
-alias itd="it2prof OneDark"
-alias itg="it2prof Gruvbox"
 
 # Tmux
-alias tsc="tmux source-file ~/.tmux.conf"
-alias t="tmux"
-alias tn="t new -t"
-alias ta="tmux a"
-alias tan="t a -t"
-alias tls="tmux ls"
-alias tk="tmux kill-server"
-alias tkss="tmux kill-session"
+alias tmsc="tmux source-file ~/.tmux.conf"
+alias tm="tmux"
+alias tmn="tmux new -t"
+alias tma="tmux a"
+alias tman="tmux a -t"
+alias tmls="tmux ls"
+alias tmk="tmux kill-server"
+alias tmkss="tmux kill-session"
 
 # Git
-alias g="git"
-alias gs="git status"
-alias gc="git commit -m \""
-alias ga="git add *"
-alias gca="git commit -am \""
-alias gh="git push"
-alias gl="git pull"
-alias gcl="git clone"
-alias gr="git ls-files --deleted -z | xargs -0 git rm"
+alias gi="git"
+alias gis="git status"
+alias gic="git commit -m \""
+alias gia="git add *"
+alias gih="git push"
+alias gil="git pull"
+alias gicl="git clone"
+alias gir="git ls-files --deleted -z | xargs -0 git rm"
 
 # Complete Git Add,Commit,Push
-function gch {
+function gich {
   git add *
   git commit -m "$1"
   git push
   git status
 }
 
-# ----------Text Editing Aliases--------------
-
 # Text Editor
-alias e="nvim"
-alias et="nvim --cmd 'cd $Text'"
-alias eg="nvim --cmd 'cd $Git'"
-alias es="nvim --cmd 'cd $Git' $Git/Thoughts/Start.md"
+alias vi="nvim"
+alias vit="nvim --cmd 'cd $Text'"
+alias vig="nvim --cmd 'cd $Git'"
+alias vis="nvim --cmd 'cd $Git' $Git/Thoughts/readme.md"
+alias vid="nvim --cmd 'cd $Git' $Git/dotFiles/readme.md"
 # Test Editor Sessions
-alias esc="nvim -S $Sessions/current.vim"
-alias esd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
-alias esg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
-
-# Run Act.sh
-alias act='Bash ~/Documents/Text/Bin/act.sh'
-alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
-
-
+alias vsc="nvim -S $Sessions/current.vim"
+alias vsd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
+alias vsg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
 
 # ----------Docker Aliases--------------
 
 # List All Images
-alias dlsi="docker image ls -a"
+alias dolsi="docker image ls -a"
 # List Currently Running Containers
-alias dlscr="docker ps"
+alias dolsrc="docker ps"
 # List Currently All Containers
-alias dlsc="docker ps -a"
+alias dolsac="docker ps -a"
 # Remove Container ID
 
-alias drmc="docker rm"
+alias dormc="docker rm"
 # Remove Image ID
-alias drmi="docker rmi"
+alias dirmi="docker rmi"
 # Restart All Containers
 # Error when docker not running
 #alias drestart="docker restart $(docker ps -q)"

@@ -4,13 +4,6 @@ rOpt="-ah --progress --delete --exclude-from $dotFiles/scripts/gitActRsyncExt.tx
 ## Case Statement
 case $1 in
 
-### Manual
-  man)
-    Echo "bkRoot - Backup Dotfiles"
-    Echo "rsRoot - Restore Dotfiles"
-    Echo "rsRoot - Restore Dotfiles"
-  ;;
-
 #bkRoot-----Backup Root Files to Text
   bkRoot)
     cp -f ~/.oh-my-zsh/oh-my-zsh.sh $dotFiles/root

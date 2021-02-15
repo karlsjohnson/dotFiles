@@ -9,6 +9,7 @@ alias cdg="cd ~/Git"
 alias cdr="cd ~/"
 alias cddf="cd ~/Git/dotFiles"
 alias cdth="cd ~/Git/Thoughts"
+alias cdnb="cd ~/Git/Notebook"
 
 function MacUpdate {
   echo "brew update starting"

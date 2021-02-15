@@ -1,5 +1,4 @@
 # Initial MacMini Aliases
 
-alias gdc="cd $pwdCloud"
-alias gdm="cd $pwdMedia"
-alias gda="cd $pwdCamera"
+alias cdhdd="cd /Volumes/HDD"
+alias cdssd="cd /Volumes/SSD"

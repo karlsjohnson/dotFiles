@@ -1,28 +1,20 @@
 # My Initialization Process for All Mac Command Lines 
 # Roadmap: use for linux as well.
 
-# ----------Call Setup Variables--------------
-# Set location of files
-dotRoot=
-dotBin=~/Documents/Text/Bin
-
 # Set My Personal Veriables
-source $dotBin/myEnv.sh
-# Set Standard Enivormental Variables
-source $dotRoot/initEnv.sh
+source ~/Documents/Text/Bin/myEnv.sh
 
-# ----------Call Setup Files--------------
-# Aliases All
+# Aliases for All CLIs
 source $dotRoot/initAlias.sh
 
-# Aliases Mac
-if [ "$osType" = "MAC" ]; then source ~/Git/dotFiles/root/initMac.sh ; fi
+# Aliases for All Macs
+if [ "$osType" = "MAC" ]; then source $dotRoot/initMac.sh ; fi
 
-# Aliases MacBookPro
-if [ "$comType" = "MacBook" ]; then source $dotRoot/initMBP.sh ; fi
+# Aliases for Personal Laptop
+if [ "$comType" = "Laptop" ]; then source $dotRoot/initMBP.sh ; fi
 
-# Aliases MacMini
-if [ "$comType" = "MacMini" ]; then source $dotRoot/initMM.sh ; fi
+# Aliases for Personal Server/Desktop
+if [ "$comType" = "Server" ]; then source $dotRoot/initMM.sh ; fi
 
 # ----------Complete--------------
 echo "My Initialization Process For $comType Complete"

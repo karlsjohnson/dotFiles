@@ -1,22 +1,33 @@
-# Initial Enviromental Variables
-
 # Determine Current Computer
 export sysType=$(scutil --get LocalHostName)
 
-# Set OS Folder and File Paths
-if [ "$osType" = "MAC" ]; then
-  export dotFiles=~/Git/dotFiles
-  export Scripts=/Users/elecknight/Scripts
-  export Bin=/Users/elecknight/Documents/Text/Bin
-  export Text=~/Documents/Text
-  export Backup=~/Documents/Backup
-  export Downloads=~/Documents/Downloads
-  export Git=~/Git
-  export Sessions=~/.config/nvim/sessions
+# Set OS Type and Computer Paths
+if [ "$sysType" = "ComputerName" ]; then
+  export osType="OS"
+  export DOCKERC="~/Path/docker-compose.yml"
+  export comType="ComputerType"
 fi
 
-# Set Variables
+if [ "$osType" = "OS" ]; then
 
-# Set Paths
-# Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$Scripts:$Bin:$PATH
+  # Set Folders
+
+  export dotFiles=path
+  export Scripts=path
+  export Bin=path
+  export Text=path
+  export Backup=path
+  export Downloads=path
+  export Git=path
+  export Sessions=path
+  export dotRoot=path
+
+  # Set Variables
+  export userGroupS="user:group"
+  export userGroupA="user:group"
+  export ServerIP="user@address"
+  export ServerMM="user@address"
+
+
+fi
+
