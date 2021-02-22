@@ -107,7 +107,6 @@ nnoremap <m-s> :wa<CR>
 
 
 
-
 "======Restore Session
 nnoremap <Leader>src :source ~/.config/nvim/sessions/current.vim<CR>
 nnoremap <Leader>srd :source ~/.config/nvim/sessions/dotfiles.vim<CR>
@@ -132,7 +131,7 @@ nnoremap <Leader>fs :e $Text/Write/Start.md<CR>
 nnoremap <Leader>fl :e $Text/Write/Links.md<CR>
 nnoremap <Leader>fi :e $Git/dotFiles/root/initrc.sh<CR>
 nnoremap <Leader>fe :e $Git/dotFiles/root/initEnv.sh<CR>
-nnoremap <Leader>fx :e ~/.tmux.conf<CR>
+nnoremap <Leader>fx :e $Git/dotFiles/root/tmuxrc.conf<CR>
 nnoremap <Leader>fa :e $Scripts/act.sh<CR>
 
 

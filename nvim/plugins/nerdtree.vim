@@ -21,6 +21,6 @@ let NERDTreeAutoDeleteBuffer = 1
 "======Shortcuts======
 
 "Map NerdTree to open
-nnoremap <m-r> :NERDTreeToggle<CR>
+nnoremap <m-b> :NERDTreeToggle<CR>
 "Map NerdTreeFind to open
-nnoremap <m-e> :NERDTreeFind<CR>
+nnoremap <m-B> :NERDTreeFind<CR>

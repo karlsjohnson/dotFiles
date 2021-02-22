@@ -30,6 +30,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'mkitt/tabline.vim'
   Plug 'scuilion/markdown-drawer'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'preservim/nerdtree'
+
 
   " Themes
   Plug 'joshdick/onedark.vim'

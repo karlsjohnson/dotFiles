@@ -77,6 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-interactive-cd osx zsh-autosuggestions zsh-syntax-highlighting)
 
+ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
 # Change autosuggest color style
