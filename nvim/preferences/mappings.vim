@@ -42,7 +42,7 @@ vnoremap > >gv
 
 "======Buffers
 " Next Buffer
-nnoremap <tab> :bnext<CR>
+nnoremap <Tab> :bnext<CR>
 " Previous Buffer
 nnoremap <S-TAB> :bprevious<CR>
 " Close Buffer

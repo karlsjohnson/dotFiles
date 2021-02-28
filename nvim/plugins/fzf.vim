@@ -9,7 +9,7 @@
 
 "open files under current directories
 "nnoremap gf :FZF<CR>
-nnoremap <m-o> :Files<CR>
+nnoremap <m-p> :Files<CR>
 
 "Search markdown headers
 "autocmd FileType markdown.pandoc nnoremap <buffer> gh :BLines #<CR>
