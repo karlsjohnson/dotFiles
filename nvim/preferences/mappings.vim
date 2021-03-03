@@ -38,7 +38,7 @@ nnoremap zw :set wrap!<CR>
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
-
+nnoremap <c-p> <m-p> 
 
 "======Buffers
 " Next Buffer
