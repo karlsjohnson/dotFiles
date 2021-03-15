@@ -122,6 +122,7 @@ test -e ~/.iterm2SI.zsh && source ~/.iterm2SI.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
 # Run MyInit
 [ -f ~/Git/dotFiles/root/initrc.sh ] && source  ~/Git/dotFiles/root/initrc.sh
 
