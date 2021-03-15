@@ -19,7 +19,6 @@ nnoremap H 0
 " Move End of line
 nnoremap L $
 
-
 "======Use delete key instead of X
 " Change Backspace for Delete charactor
 nnoremap <BS> x
@@ -46,7 +45,7 @@ nnoremap <Tab> :bnext<CR>
 " Previous Buffer
 nnoremap <S-TAB> :bprevious<CR>
 " Close Buffer
-nnoremap db :bd!<CR>
+nnoremap <m-w> :bd!<CR>
 " Close Buffer, Switch to previous
 nnoremap dc :bprevious<CR>:bdelete #<CR>
 " List Buffers
