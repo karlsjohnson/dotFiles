@@ -4,6 +4,7 @@
 
 # Source init files
 alias szsh=". ~/.zshrc"
+alias ezsh="exec zsh"
 
 # Copy Path to Clipboard
 alias cpath="pwd|pbcopy"
