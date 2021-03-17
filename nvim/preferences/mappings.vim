@@ -19,6 +19,17 @@ inoremap <m-d> <Esc>
 nnoremap H 0
 " Move End of line
 nnoremap L $
+" Move Line down
+nnoremap <m-down> :m +1<CR>
+" Move Line up
+nnoremap <m-up> :m -2<CR>
+" Use multiple modifier keys
+"nnoremap <m-c-s-F> :m -2<CR>
+inoremap <m-$> <C-o>$
+
+nnoremap <m-s-up> yyP
+nnoremap <m-s-down> yyp
+
 
 "======Use delete key instead of X
 " Change Backspace for Delete charactor
