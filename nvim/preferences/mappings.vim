@@ -1,4 +1,11 @@
 "======Neovim Commands Shortcut File======
+" Map Guide and exmaples
+" m - option key
+" s - shift key or just use capital v vs V
+" c - control key
+" no command key - use bettertouchtool
+"Use multiple mod keys exmaples below
+"nnoremap <m-c-s-F> :m -2<CR>
 
 "======Set Leader Key
 let mapleader = "\<Space>"
@@ -24,7 +31,6 @@ nnoremap <m-down> :m +1<CR>
 " Move Line up
 nnoremap <m-up> :m -2<CR>
 " Use multiple modifier keys
-"nnoremap <m-c-s-F> :m -2<CR>
 inoremap <m-$> <C-o>$
 inoremap <m-^> <C-o>^
 nnoremap <m-s-up> yyP
