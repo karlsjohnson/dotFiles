@@ -26,7 +26,7 @@ nnoremap <m-up> :m -2<CR>
 " Use multiple modifier keys
 "nnoremap <m-c-s-F> :m -2<CR>
 inoremap <m-$> <C-o>$
-
+inoremap <m-^> <C-o>^
 nnoremap <m-s-up> yyP
 nnoremap <m-s-down> yyp
 
