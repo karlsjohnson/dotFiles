@@ -22,19 +22,21 @@ inoremap <m-d> <Esc>
 
 
 "======Set Movement
-" Move to Beginning of line
+" Move to Beginning/End of line Normal Mode
 nnoremap H 0
-" Move End of line
 nnoremap L $
-" Move Line down
+" Move Line down/up
 nnoremap <m-down> :m +1<CR>
-" Move Line up
 nnoremap <m-up> :m -2<CR>
-" Use multiple modifier keys
-inoremap <m-$> <C-o>$
-inoremap <m-^> <C-o>^
+" Copy Line Down/Up
 nnoremap <m-s-up> yyP
 nnoremap <m-s-down> yyp
+" Move to Beginning/End of line Insert Mode
+inoremap <m-$> <C-o>$
+inoremap <m-^> <C-o>^
+" Move Next/Previous Word Inser Mode
+inoremap <m-right> <c-o>w
+inoremap <m-left> <c-o>b
 
 
 "======Use delete key instead of X
