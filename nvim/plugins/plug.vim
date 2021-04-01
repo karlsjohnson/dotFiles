@@ -16,7 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "======Plug.vim Plugins Add
   " Better Syntax Support
   Plug 'sheerun/vim-polyglot'
- 
+
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   Plug 'scrooloose/nerdtree'
@@ -32,7 +32,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'airblade/vim-gitgutter'
   Plug 'preservim/nerdtree'
-
 
   " Themes
   Plug 'joshdick/onedark.vim'

@@ -25,6 +25,8 @@ inoremap <m-d> <Esc>
 " Move to Beginning/End of line Normal Mode
 nnoremap H 0
 nnoremap L $
+" Middle of line
+nnoremap M gm
 " Move Line down/up
 nnoremap <m-down> :m +1<CR>
 nnoremap <m-up> :m -2<CR>
