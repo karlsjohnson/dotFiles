@@ -3,19 +3,17 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/Git
+cd ~/Documents/Text
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +107 Notebook/cryptocurrency.md
-badd +22 Thoughts/vimMap.md
-badd +4 ~/.config/nvim/init.vim
-badd +36 ~/.config/nvim/preferences/mappings.vim
-badd +35 ~/.config/nvim/plugins/plug.vim
+badd +7 md/meTasks.md
+badd +15 ~/.config/nvim/init.vim
+badd +45 ~/.config/nvim/preferences/mappings.vim
 argglobal
 %argdel
-edit Notebook/cryptocurrency.md
+edit ~/.config/nvim/preferences/mappings.vim
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -23,7 +21,7 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-balt ~/.config/nvim/plugins/plug.vim
+balt ~/.config/nvim/init.vim
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -34,18 +32,18 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 106 - ((39 * winheight(0) + 21) / 43)
+let s:l = 45 - ((19 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 106
-normal! 0
+keepjumps 45
+normal! 011|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0&& getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToOF
+set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToOFA
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)

@@ -39,6 +39,14 @@ inoremap <m-^> <C-o>^
 " Move Next/Previous Word Inser Mode
 inoremap <m-right> <c-o>w
 inoremap <m-left> <c-o>b
+" Change tab keys
+nnoremap <m-,> <<
+nnoremap <m-.> >>
+inoremap <m-,> <C-d>
+inoremap <m-.> <C-T>
+" Change undo to match VSC
+nnoremap <m-z> u
+nnoremap <m-Z> <c-r>
 
 
 "======Use delete key instead of X
