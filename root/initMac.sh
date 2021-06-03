@@ -10,6 +10,9 @@ alias cdr="cd ~/"
 alias cddf="cd ~/Git/dotFiles"
 alias cdth="cd ~/Git/Thoughts"
 alias cdnb="cd ~/Git/Notebook"
+# Stop Quarantining App  add path to app you want to stop
+# command "/Applications/SomeApp.app"
+alias stopQ="sudo xattr -dr com.apple.quarantine"
 
 function MacUpdate {
   echo "brew update starting"
