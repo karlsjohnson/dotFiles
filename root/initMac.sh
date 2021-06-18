@@ -14,6 +14,10 @@ alias cdnb="cd ~/Git/Notebook"
 # command "/Applications/SomeApp.app"
 alias stopQ="sudo xattr -dr com.apple.quarantine"
 
+alias shus="ssh $ServerUS"
+alias shud="ssh $ServerUD"
+
+
 function MacUpdate {
   echo "brew update starting"
   brew update
