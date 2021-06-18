@@ -130,7 +130,7 @@ alias dcls="docker-compose -f $DOCKERC ps"
 alias dcrestart="docker-compose -f $DOCKERC restart"
 # Start containers that were previously created, but were stopped. It never creates new containers.
 alias dcstart="docker-compose -f $DOCKERC start -d"
-#Stops running containers without removing them. They can be started again with 
+#Stops running containers without removing them. They can be started again with
 alias dcstop="docker-compose -f $DOCKERC stop"
 # Removes stopped service containers.
 alias dcrm="docker-compose -f $DOCKERC rm"
@@ -139,7 +139,7 @@ alias dcrm="docker-compose -f $DOCKERC rm"
 # Docker Update
 function dUpdate {
   docker system prune
-  docker container prune 
+  docker container prune
   docker image prune
   docker volume prune
   # Take down Docker Compose
