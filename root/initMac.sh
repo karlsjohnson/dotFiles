@@ -13,6 +13,8 @@ alias cdnb="cd ~/Git/Notebook"
 # Stop Quarantining App  add path to app you want to stop
 # command "/Applications/SomeApp.app"
 alias stopQ="sudo xattr -dr com.apple.quarantine"
+# restart without login
+alias autorestart="sudo fdesetup authrestart"
 
 alias shus="ssh $ServerUS"
 alias shud="ssh $ServerUD"
