@@ -27,3 +27,10 @@ function MacUpdate {
   brew cleanup
   echo "brew update complete"
 }
+
+# Turn dock delay show to 5 seconds
+alias dockoff="defaults write com.apple.Dock autohide-delay -float 5 && killall Dock"
+# Turn dock on no delay
+alias dockfast="defaults write com.apple.Dock autohide-delay -float 0 && killall Dock"
+# Turn dock on auto delay
+alias dockon="defaults delete com.apple.Dock autohide-delay && killall Dock"
