@@ -16,8 +16,7 @@ alias stopQ="sudo xattr -dr com.apple.quarantine"
 # restart without login
 alias autorestart="sudo fdesetup authrestart"
 
-alias shus="ssh $ServerUS"
-alias shud="ssh $ServerUD"
+alias shuv="ssh $ServerUVM"
 
 
 function MacUpdate {
