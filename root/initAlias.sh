@@ -78,7 +78,6 @@ alias gia="git add *"
 alias gih="git push"
 alias gil="git pull"
 alias gicl="git clone"
-alias gir="git ls-files --deleted -z | xargs -0 git rm"
 
 # Complete Git Add,Commit,Push
 function gich {
@@ -92,7 +91,7 @@ function gich {
 alias vi="nvim"
 alias vit="nvim --cmd 'cd $Text'"
 alias vig="nvim --cmd 'cd $Git'"
-alias vis="nvim --cmd 'cd $Git' $Git/Thoughts/readme.md"
+alias vin="nvim --cmd 'cd $Git' $Git/Notebook/readme.md"
 alias vid="nvim --cmd 'cd $Git' $Git/dotFiles/readme.md"
 # Test Editor Sessions
 alias vsc="nvim -S $Sessions/current.vim"
@@ -108,7 +107,6 @@ alias dolsrc="docker ps"
 # List Currently All Containers
 alias dolsac="docker ps -a"
 # Remove Container ID
-
 alias dormc="docker rm"
 # Remove Image ID
 alias dirmi="docker rmi"
@@ -116,7 +114,7 @@ alias dirmi="docker rmi"
 # Error when docker not running
 #alias drestart="docker restart $(docker ps -q)"
 # see all the ports that are currently listening
-alias dport="sudo netstat -tulpn | grep LISTEN"
+#alias dport="sudo netstat -tulpn | grep LISTEN"
 
 # Docker Compose Tools
 
@@ -137,20 +135,17 @@ alias dcrm="docker-compose -f $DOCKERC rm"
 
 
 # Docker Update
-function dUpdate {
-  docker system prune
-  docker container prune
-  docker image prune
-  docker volume prune
-  # Take down Docker Compose
-  docker-compose -f $DOCKER/docker-compose.yml down
+function dcupdate {
+  dcdown
+  # Prune images and containers
+  docker system pruneszsh -f
+  docker container prune -f
+  docker image prune -f
+  docker volume prune -f
   # Update Images to Tag:Latest
   docker images | grep -v REPOSITORY | awk '{print $1}' | xargs -L1 docker pull
   docker images | grep "<none>" | awk '{print $3}' | xargs -L1 docker rmi
-  # Pull up Dopcker Compose
-  docker-compose -f $DOCKER/docker-compose.yml up -d
-  # Restart All Running Containers
-  docker restart $(docker ps -q)
+  dcup
   echo "Docker update complete"
 }
 

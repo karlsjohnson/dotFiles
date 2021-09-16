@@ -19,7 +19,7 @@ alias autorestart="sudo fdesetup authrestart"
 alias shuv="ssh $ServerUVM"
 
 
-function MacUpdate {
+function macUpdate {
   echo "brew update starting"
   brew update
   brew upgrade
