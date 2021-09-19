@@ -1,4 +1,4 @@
-# My Initialization Process for All Mac Command Lines 
+# My Initialization Process for All Mac Command Lines
 # Roadmap: use for linux as well.
 
 # Set My Personal Veriables
