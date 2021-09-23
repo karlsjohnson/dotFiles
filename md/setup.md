@@ -1,5 +1,13 @@
 # CLI Setup
 
+## Install
+
+- prompt
+- syntax highlighing
+
+
+
+
 ## Links
 
 ### dotFiles
