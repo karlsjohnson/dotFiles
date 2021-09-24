@@ -5,6 +5,7 @@
 ### Mac
 
 - Install homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  - Uninstall brew and all packages: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"`
   - Intel Macs
     - Installs in `/usr/local`
   - Apple Silicon
@@ -12,11 +13,11 @@
     - After Install Run to setup opt diorectory for brew isntalls:
       - `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/elecknight/.zprofile`
       - `eval "$(/opt/homebrew/bin/brew shellenv)`
-- Install GNU STOW
-  - Mac: `brew install stow`
-  - Debian: `sudo apt install stow`
-  - Arch: `sudo pacman -S stow`
-
+- Install Zsh
+  - brew command: `brew install zsh`
+  - add .zprofile to root
+    - add `export ZDOTDIR=$HOME/.config/zsh` to root
+    - if Apple ARM, add `eval \"\$(/opt/homebrew/bin/brew shellenv)\"` to add homebrew /opt directory
 
 ## Links
 
