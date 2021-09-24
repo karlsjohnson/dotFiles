@@ -2,6 +2,18 @@
 
 ## Install
 
+### Mac
+
+- Install homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  - Intel Macs
+    - Installs in `/usr/local`
+  - Apple Silicon
+    - Installs in `/opt/homebrew`
+    - After Install Run to setup opt diorectory for brew isntalls:
+      - `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/elecknight/.zprofile`
+      - `eval "$(/opt/homebrew/bin/brew shellenv)`
+
+
 - prompt
 - syntax highlighing
 
