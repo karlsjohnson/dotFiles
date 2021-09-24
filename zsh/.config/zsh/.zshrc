@@ -2,8 +2,10 @@ export ZDOTDIR=$HOME/.config/zsh
 export DOT=$HOME/Git/dotfiles
 
 
-echo "Start"
+echo "Started STOW"
 alias szsh=". ~/.config/zsh/.zshrc"
+
+alias la="ls -a"
 
 
 # Git
