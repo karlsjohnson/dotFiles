@@ -12,7 +12,7 @@
     - After Install Run to setup opt diorectory for brew isntalls:
       - `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/elecknight/.zprofile`
       - `eval "$(/opt/homebrew/bin/brew shellenv)`
-Install GNU STOW
+- Install GNU STOW
   - Mac: `brew install stow`
   - Debian: `sudo apt install stow`
   - Arch: `sudo pacman -S stow`
