@@ -18,6 +18,8 @@
   - add .zprofile to root
     - add `export ZDOTDIR=$HOME/.config/zsh` to root
     - if Apple ARM, add `eval \"\$(/opt/homebrew/bin/brew shellenv)\"` to add homebrew /opt directory
+- Install iterm2 shell integration
+
 
 ## Links
 

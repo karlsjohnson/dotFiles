@@ -40,9 +40,13 @@ if [ "$Machine" = "MM" ]; then
   echo "creating MM zprofile"
 fi
 
-# Link zsh config files
+# Link zsh config folder
 if [ -d ~/.config/zsh ]; then rm -Rf ~/.config/zsh; fi
 ln -s ~/Git/dotFiles/zsh ~/.config/zsh
+
+# Link iterm config folder
+if [ -d ~/.config/iterm2 ]; then rm -Rf ~/.config/iterm2; fi
+ln -s ~/Git/dotFiles/iterm2 ~/.config/iterm2
 
 # Link gitconfig file
 if [ -f ~/.gitconfig ]; then rm -f ~/.gitconfig; fi

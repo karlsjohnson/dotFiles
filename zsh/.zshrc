@@ -1,25 +1,17 @@
+#Set dotFiles location
 export DOT=$HOME/Git/dotfiles
 
+# Set My Personal Veriables
+source ~/Documents/Text/Bin/myEnv.sh
 
-echo "Started STOW"
-alias szsh=". ~/.config/zsh/.zshrc"
+#iTerm Shell script
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
 
-alias la="ls -a"
+# Aliases for all
+test -e "${ZDOTDIR}/zshrc-alias.sh" && source "${ZDOTDIR}/zshrc-alias.sh"
 
+# Aliases for Macs
+if [ "$osType" = "MAC" ]; then source ${ZDOTDIR}/zshrc-alias-mac.sh ; fi
 
-# Git
-alias gi="git"
-alias gis="git status"
-alias gic="git commit -m \""
-alias gia="git add *"
-alias gih="git push"
-alias gil="git pull"
-alias gicl="git clone"
-
-# Complete Git Add,Commit,Push
-function gich {
-  git add *
-  git commit -m "$1"
-  git push
-  git status
-}
+# ----------Complete--------------
+echo "My Initialization Process For $comType Complete"
