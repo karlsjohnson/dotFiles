@@ -22,6 +22,12 @@ zsh_add_file "zsh-aliases.zsh"
 # Old way: if [ "$osType" = "MAC" ]; then source ${ZDOTDIR}/zsh-mac ; fi
 [[ "$osType" = "MAC" ]] && zsh_add_file "zsh-mac.zsh"
 
+# Load prompt
+zsh_add_file "zsh-prompt.zsh"
+
+# Load vim mode
+zsh_add_file "zsh-vim-mode"
+
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
