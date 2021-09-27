@@ -59,6 +59,13 @@ alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 # ----------Program Aliases--------------
 
+# Update plugins
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+
+
+
+# z (better cd)
+alias j='z'
 
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"

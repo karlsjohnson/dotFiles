@@ -19,6 +19,8 @@
     - add `export ZDOTDIR=$HOME/.config/zsh` to root
     - if Apple ARM, add `eval \"\$(/opt/homebrew/bin/brew shellenv)\"` to add homebrew /opt directory
 - Install iterm2 shell integration
+- Install z: `brew install z`
+  - z is cd with a memory [rupa\/z](https://github.com/rupa/z)
 
 
 ## Links

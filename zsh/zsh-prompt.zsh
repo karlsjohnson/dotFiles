@@ -43,4 +43,5 @@ PROMPT+="
 :"
 # TODO look into this for more colors
 # https://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
 # also ascii escape codes

@@ -7,6 +7,11 @@ source ~/Documents/Text/Bin/myEnv.zsh
 # Load Functions
 source "$ZDOTDIR/zsh-functions.zsh"
 
+# Load z.sh jump directory script
+source "/usr/local/etc/profile.d/z.sh"
+# set path for z memory file
+export _Z_DATA=$ZDOTDIR/.z
+
 # Load zsh options
 zsh_add_file "zsh-options.zsh"
 
