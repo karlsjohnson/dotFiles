@@ -1,8 +1,14 @@
 #Set dotFiles location
 export DOT=$HOME/Git/dotfiles
 
+# Useful Functions
+source "$ZDOTDIR/zsh-functions"
+
+
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.sh
+
+echo "break"
 
 #iTerm Shell script
 test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
