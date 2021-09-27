@@ -1,4 +1,6 @@
 # Function to source files if they exist
+
+
 function zsh_add_file() {
     [ -f "$ZDOTDIR/$1" ] && source "$ZDOTDIR/$1"
 }
@@ -29,4 +31,4 @@ function zsh_add_completion() {
 	completion_file="$(basename "${completion_file_path}")"
 	if [ "$2" = true ] && compinit "${completion_file:1}"
 }
- echo "functions recorded"
+

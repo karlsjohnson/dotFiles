@@ -1,23 +1,33 @@
 #Set dotFiles location
 export DOT=$HOME/Git/dotfiles
 
-# Useful Functions
-source "$ZDOTDIR/zsh-functions"
-
-
 # Set My Personal Veriables
-source ~/Documents/Text/Bin/myEnv.sh
+source ~/Documents/Text/Bin/myEnv.zsh
 
-echo "break"
+# Load Functions
+source "$ZDOTDIR/zsh-functions.zsh"
 
-#iTerm Shell script
-test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
+# Load zsh options
+zsh_add_file "zsh-options.zsh"
 
-# Aliases for all
-test -e "${ZDOTDIR}/zshrc-alias.sh" && source "${ZDOTDIR}/zshrc-alias.sh"
+#Load iTerm Shell script
+#Old way: test -e "${ZDOTDIR}/zsh-aliases" && source "${ZDOTDIR}/zsh-aliases"
+zsh_add_file ".iterm2_shell_integration.zsh"
+
+# Load Aliases for all
+zsh_add_file "zsh-aliases.zsh"
+
 
 # Aliases for Macs
-if [ "$osType" = "MAC" ]; then source ${ZDOTDIR}/zshrc-alias-mac.sh ; fi
+# Old way: if [ "$osType" = "MAC" ]; then source ${ZDOTDIR}/zsh-mac ; fi
+[[ "$osType" = "MAC" ]] && zsh_add_file "zsh-mac.zsh"
+
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "hlissner/zsh-autopair"
+
+
 
 # ----------Complete--------------
 echo "My Initialization Process For $comType Complete"
