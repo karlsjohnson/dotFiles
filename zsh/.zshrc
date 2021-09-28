@@ -3,6 +3,11 @@ export DOT=$HOME/Git/dotfiles
 
 export EDITOR=vim
 
+# Add zoxide to shell
+eval "$(zoxide init zsh)"
+# Set zoxide Config file
+export _ZO_DATA_DIR=$HOME/.config/zoxide/
+
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.zsh
 
