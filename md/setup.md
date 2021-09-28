@@ -20,8 +20,10 @@
     - if Apple ARM, add `eval \"\$(/opt/homebrew/bin/brew shellenv)\"` to add homebrew /opt directory
 - Install iterm2 shell integration
 - Install [zoxide](https://github.com/ajeetdsouza/zoxide)
-- `brew install zoxide`
+  - `brew install zoxide`
   - z is cd with a memory [rupa\/z](https://github.com/rupa/z)
+  - move library to $HOME/.config/zoxide
+- Install fzf
 
 
 ## Links
