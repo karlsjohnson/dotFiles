@@ -1,6 +1,8 @@
 #Set dotFiles location
 export DOT=$HOME/Git/dotfiles
 
+export EDITOR=vim
+
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.zsh
 
@@ -26,7 +28,7 @@ zsh_add_file "zsh-aliases.zsh"
 zsh_add_file "zsh-prompt.zsh"
 
 # Load vim mode
-zsh_add_file "zsh-vim-mode"
+zsh_add_file "zsh-vim.zsh"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
