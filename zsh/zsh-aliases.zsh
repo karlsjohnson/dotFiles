@@ -64,8 +64,11 @@ alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git
 
 
 
-# z (better cd)
+# zoxide (better cd)
+# j instead of cd
 alias j='z'
+# brings up list of folders
+alias f='zi'
 
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"
