@@ -62,13 +62,18 @@ alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
 # Update plugins
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 
+#exa
+alias ls='exa --icons --group-directories-first'
+alias la='exa --icons -a --group-directories-first'
+alias ll='exa --icons -a -l --group-directories-first'
 
 
 # zoxide (better cd)
 # j instead of cd
-alias f='z'
+alias cd='z'
 # brings up list of folders
-alias fl='zi'
+alias cdf='zi'
+bindkey -s '^f' 'zi^M'
 
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"

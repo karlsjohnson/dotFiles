@@ -32,8 +32,23 @@
     - `$(brew --prefix)/opt/fzf/install`
   - remove .bashrc and bash fzf files
   - keybinding (^r)
-  - hit tab to ufssy auto complete
+  - hit tab to fussy auto complete
+- not installed [zsh-completions](https://github.com/zsh-users/zsh-completions)
+- Install ls replacement [exa github](https://github.com/ogham/exa)
+  - [exa website](https://the.exa.website/)
+  - `brew install exa`
+- Install a less replacement [bat](https://github.com/sharkdp/bat)
+- [setting-up-a-new-macbook-pro](https://www.garrickadenbuie.com/blog/setting-up-a-new-macbook-pro)
+  - `brew install bat`
+- Install [Ranger](https://github.com/ranger/ranger)
+  - `brew install ranger`
+  - set default config: `ranger --copy-config=all`
+  - modify rc.config (in ~/.config/ranger/rc.conf)
+    - change `set preview_images false` -> `set preview_images true`
+    - change `set preview_images_method w3m` -> `set preview_images_method iterm2`
 
+TMUX
+NVIM
 
 ## Links
 
