@@ -4,9 +4,13 @@ export DOT=$HOME/Git/dotfiles
 export EDITOR=nvim
 
 # Add zoxide to shell
+# https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init zsh)"
 # Set zoxide Config file
 export _ZO_DATA_DIR=$HOME/.config/zoxide/
+
+# Load fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.zsh
@@ -44,3 +48,4 @@ zsh_add_plugin "hlissner/zsh-autopair"
 
 # ----------Complete--------------
 echo "My Initialization Process For $comType Complete"
+

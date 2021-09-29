@@ -21,9 +21,18 @@
 - Install iterm2 shell integration
 - Install [zoxide](https://github.com/ajeetdsouza/zoxide)
   - `brew install zoxide`
-  - z is cd with a memory [rupa\/z](https://github.com/rupa/z)
+  - add zoxide to shell ->.zshrc
+    - `eval "$(zoxide init zsh)"`
+  - move library -> .zshrc
+    - export _ZO_DATA_DIR=$HOME/.config/zoxide/
   - move library to $HOME/.config/zoxide
-- Install fzf
+- Install fzf [fzf](https://github.com/junegunn/fzf)
+  - `brew install fzf`
+  - To install useful key bindings and fuzzy completion
+    - `$(brew --prefix)/opt/fzf/install`
+  - remove .bashrc and bash fzf files
+  - keybinding (^r)
+  - hit tab to ufssy auto complete
 
 
 ## Links
