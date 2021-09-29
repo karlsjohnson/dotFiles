@@ -11,6 +11,13 @@ export _ZO_DATA_DIR=$HOME/.config/zoxide/
 
 # Load fzf config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# set fuzzy autocomplete on seperate key
+# https://github.com/junegunn/fzf/wiki/Configuring-fuzzy-completion
+export FZF_COMPLETION_TRIGGER=''
+bindkey '^T' fzf-completion
+bindkey '^I' $fzf_default_completion
+
+
 
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.zsh
