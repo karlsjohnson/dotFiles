@@ -1,7 +1,7 @@
 #Set dotFiles location
 export DOT=$HOME/Git/dotfiles
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # Add zoxide to shell
 eval "$(zoxide init zsh)"
