@@ -1,12 +1,11 @@
 # Tmux
 
-- [tumx:](https://github.com/tmux/tmux/wiki) `brew install tumx`
+- [tumx](https://github.com/tmux/tmux/wiki) `brew install tumx`
 
 ## Tmux-Links
 
 _ProgramTmux:_ **Links**
 
-- [tmux getting started](https://github.com/tmux/tmux/wiki/Getting-Started)
 - [Awesome-tmux](https://github.com/rothgar/awesome-tmux)
 - [Oh My Tmux!](https://github.com/gpakosz/.tmux)
 - [Read The Tao of tmux | Leanpub](https://leanpub.com/the-tao-of-tmux/read)

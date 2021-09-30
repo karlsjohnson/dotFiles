@@ -48,8 +48,17 @@
     - change `set preview_images_method w3m` -> `set preview_images_method iterm2`
 - Install [tmux](https://github.com/tmux/tmux/wiki)
   - `brew install tmux`
-  - move or link ~/.tmux.conf
-TMUX
+  - Setup config files
+  - Started with [oh-my-tmux](https://github.com/gpakosz/.tmux)
+    - move the .tmux.conf.local into the .tmux.conf file.
+    - link ~/.tmux.conf
+  - Install plugin manager [TPM](https://github.com/tmux-plugins/tpm)
+    - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+    - prefix (^A) + captial I to install plugins
+    - prefix (^A) + captial U to update plugins
+  - need to redo tmux config file with my own words
+
+
 NVIM
 
 ## Links
