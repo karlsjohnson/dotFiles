@@ -23,7 +23,8 @@ bindkey '^I' $fzf_default_completion
 # Colors
 # autoload -Uz colors && colors
 
-
+# Add VScode to CLI via path
+# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Set My Personal Veriables
 source ~/Documents/Text/Bin/myEnv.zsh

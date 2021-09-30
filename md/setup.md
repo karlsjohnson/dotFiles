@@ -46,7 +46,9 @@
   - modify rc.config (in ~/.config/ranger/rc.conf)
     - change `set preview_images false` -> `set preview_images true`
     - change `set preview_images_method w3m` -> `set preview_images_method iterm2`
-
+- Install [tmux](https://github.com/tmux/tmux/wiki)
+  - `brew install tmux`
+  - move or link ~/.tmux.conf
 TMUX
 NVIM
 
