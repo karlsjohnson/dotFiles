@@ -44,6 +44,10 @@ fi
 if [ -d ~/.config/zsh ]; then rm -Rf ~/.config/zsh; fi
 ln -s ~/Git/dotFiles/zsh ~/.config/zsh
 
+# Link tmux config file
+if [ -f ~/.tmux.conf ]; then rm -f ~/.tmux.conf; fi
+ln -s ~/Git/dotFiles/tmux/.tmux.conf ~/.tmux.conf
+
 # Link gitconfig file
 if [ -f ~/.gitconfig ]; then rm -f ~/.gitconfig; fi
 ln -s ~/Git/dotFiles/git/.gitconfig ~/.gitconfig
