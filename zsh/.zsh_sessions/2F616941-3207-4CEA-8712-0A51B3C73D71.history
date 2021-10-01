@@ -1,0 +1,295 @@
+brew uninstall z
+brew remove z
+dcsdfs05[D]
+bindkey -v
+cddf
+gich "Changes"
+ls
+cd zsh
+ls
+la
+rm .z
+fdff
+szsh
+new
+exit
+xcfd
+j
+z
+exit
+szsh
+exit
+exit
+dfsdfdts
+exit
+exit
+szsh
+brew install zoxide
+zoxide query -ls
+cd Git
+cd dotFiles
+gis
+gich "Changes"
+cd ~/Documents
+cd Text
+cd Md
+..
+cd Bin
+~
+z Git
+szsh
+z Git
+z dotFiles
+z ~/Documents
+cd Bin
+z ..
+z Md
+z dotF
+z ..
+z Thoughts
+ls
+z Notebook
+z dotF
+j Not
+j Md
+j Text/Md
+j ~/Documents/Text/Md
+..
+j Bin
+echo $Home
+echo $(Home)
+echo ($Home)
+echo "$Home"
+echo $HOME
+szsh
+j dotF
+j Md
+brew install fzf
+gich "Changes"
+gich "Changes"
+zi
+szsh
+f
+f
+df -h
+f
+f Md
+brew install nvim
+exit
+f
+szsh
+exit
+szsh
+szsh
+exit
+szsh
+szsh
+szsh
+szsh
+szsh
+exit
+szsh
+szsh
+f dotF
+f Md
+fl Md
+f dotF
+gis
+gich "Changes"
+$(brew --prefix)/opt/fzf/install
+find * -type f | fzf > selected
+szsh
+szsh
+gich "Changes"
+szsh
+cd Old/nvim/
+szsh
+cd
+szsh 
+szsh
+gich "Changes"
+f dotF
+szsh
+szsh
+szsh
+zi
+zi
+brew install zsh-completions
+szsh
+exit
+szsh
+exit
+szsh
+echo $fpath
+szsh
+szsh
+brew uninstall zsh-completions
+brew remove zsh-completions
+szsh
+nvim --version
+ls
+f dotF
+f
+szsh
+f dotF
+zi
+z dotF
+f Md
+exit
+z dotF
+z Md
+f Text
+f Note
+imgcat
+ls
+szsh
+ls
+szsh
+ls
+ls --color
+cd ..
+ls
+la
+szsh
+ls
+cd Notebook
+ls
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ls
+brew install exa
+exa
+..
+exa
+exa --icons
+exa --icons -a
+szsh
+szsh
+ls
+la
+szsh
+ls
+exa dotFiles
+exa dotFiles
+szsh
+ll
+exa --tree --level=2
+cd dotF
+git status
+exa --long --git
+cd zsh
+exa --long --git
+exa --long --git -a
+exa
+..
+ls
+less README.md
+less README.md
+brew install bat
+bat README.md
+ls zsh
+la zsh
+brew install ranger
+ranger --copy-config=all
+ranger
+ranger
+exit
+ranger
+wget -O ~/bin/imgcat https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat
+imgcat
+brew install nnn
+nnn
+brew remove nnn
+ranger
+ranger
+ranger -debug
+ranger --debug
+ranger
+ranger
+ranger --copy-config=all
+ranger --copy-config=all
+ranger
+ranger
+ls
+la
+ll
+ranger
+cd dotF
+gich "Changes"
+gis
+gich "Changes"
+gis
+cd zsh
+ls
+code
+szsh
+code zsh-aliases.zsh
+exit
+exit
+exit
+
+exit
+exit
+exit
+exit
+brew list bat
+brew list bat || brew install bat
+brew list python@3.9 &>/dev/null
+brew install bat
+brew install bat
+brew list python@3.9 &>/dev/null
+brew list bat &>/dev/null
+[[ brew list bat  ]] && echo "installed" || echo "not"
+[[ brew list bat &>/dev/null ]] && echo "installed" || echo "not"
+szsh
+brew_install bat
+brew install tmux
+tmux
+tmux
+tmux
+tmux
+szsh
+tmux
+$(brew --prefix)/opt/tmux/share/tmux
+exit
+exit
+exit
+nvim
+tmux source ~/.tmux.conf
+I
+gich "Changes"
+gis
+clear
+nvim
+nvim
+gis
+bash setup.sh 
+cd _setup
+cd dot
+cd _setup
+bash setup.sh
+tmux
+tmux
+tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux
+tmux
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+act Backup
+exit
+tmux
+act bkpCloud
+act bkCore
+act bkpCloud
+act Backup
+cd _setup
+bash setup.sh
+tmux
+tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/tpm
+tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux
+exit
+exit
+ls
+ls
