@@ -46,6 +46,7 @@
   - modify rc.config (in ~/.config/ranger/rc.conf)
     - change `set preview_images false` -> `set preview_images true`
     - change `set preview_images_method w3m` -> `set preview_images_method iterm2`
+- This installed python - latest with pip (python -m pip)
 - Install [tmux](https://github.com/tmux/tmux/wiki)
   - `brew install tmux`
   - Setup config files
@@ -57,9 +58,25 @@
     - prefix (^A) + captial I to install plugins
     - prefix (^A) + captial U to update plugins
   - need to redo tmux config file with my own words
-
-
-NVIM
+  - [Install Rust](https://www.rust-lang.org/tools/install)
+  - [Cargo](https://doc.rust-lang.org/cargo/index.html)
+- Install Rust (and cargo - the package manager)
+  - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+  - update current shell `source $HOME/.cargo/env`
+  - update `rustup update`
+  - uninstall `rustup self uninstall`
+- Installing [Fast Node Manager (fnm)](https://github.com/Schniz/fnm)
+  - [setup](https://www.chrisatmachine.com/Nodejs/02-Install-FNM/)
+  - `brew install fnm`
+  - add `eval "$(fnm env)"` to zshrc
+  - update `brew upgrade fnm`
+  - remove - remove the .fnm folder
+- NVIM - [LunarVim](https://www.lunarvim.org/)
+  - install fnm (includes nodejs and npm) and rustup (includes cargo)
+  - Run Stable, but get error at end
+  - setup - add path to zshrc `export PATH="$HOME/.local/bin:$PATH"`
+  - run lvim, run `:LvimCacheReset`, then `:PackerSync` which solved issues
+  - Not installing - using VSCode
 
 ## Links
 

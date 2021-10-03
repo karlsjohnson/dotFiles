@@ -5,9 +5,12 @@ export EDITOR=nvim
 
 # Add zoxide to shell
 # https://github.com/ajeetdsouza/zoxide
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"1
 # Set zoxide Config file
 export _ZO_DATA_DIR=$HOME/.config/zoxide/
+
+# Add Fast Node Manager to shell
+eval "$(fnm env)"
 
 # This should be set for ^I to work, but not working
 setopt vi
@@ -19,6 +22,13 @@ export FZF_COMPLETION_TRIGGER=''
 bindkey '^T' fzf-completion
 # not sure what this is
 bindkey '^I' $fzf_default_completion
+
+#Add rustup - cargo to shell
+source $HOME/.cargo/env
+
+# Add lunarVim to path
+export PATH="$HOME/.local/bin:$PATH"
+
 
 # Colors
 # autoload -Uz colors && colors
