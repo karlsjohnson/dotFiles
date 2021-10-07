@@ -26,9 +26,6 @@ bindkey '^I' $fzf_default_completion
 #Add rustup - cargo to shell
 source $HOME/.cargo/env
 
-# Add lunarVim to path
-export PATH="$HOME/.local/bin:$PATH"
-
 
 # Colors
 # autoload -Uz colors && colors
