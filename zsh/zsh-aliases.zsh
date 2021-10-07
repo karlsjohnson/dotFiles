@@ -69,11 +69,8 @@ alias ll='exa --icons -a -l --group-directories-first'
 
 
 # zoxide (better cd)
-# j instead of cd
-alias cd='z'
 # brings up list of folders
-alias cdf='zi'
-bindkey -s '^f' 'zi^M'
+alias zz='zi'
 
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"
