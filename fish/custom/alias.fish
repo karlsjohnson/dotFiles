@@ -132,6 +132,9 @@ function gich
 end
 
 # Text Editor
+function vs
+  code $argv
+end
 function vi
   nvim $argv
 end
