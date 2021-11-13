@@ -22,7 +22,7 @@ function macUpdate
 end
 
 function act
-  Bash ~/Documents/Text/Code/act.sh
+  Bash ~/Documents/Text/Code/act.sh $argv
 end
 
 # setup exa aliases
