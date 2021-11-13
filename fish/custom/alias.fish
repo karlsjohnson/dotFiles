@@ -61,7 +61,7 @@ function rmd
   rm -rf
 end
 # Remove Files by Force
-function rm
+function rmf
   rm -f
 end
 

@@ -108,9 +108,5 @@ ln -s ~/Git/dotFiles/fish/fish_plugins  ~/.config/fish/fish_plugins
 
 
 
-
-
-
-
 echo "Setup done for" $Machine
 

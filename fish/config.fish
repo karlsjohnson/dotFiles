@@ -4,6 +4,7 @@ end
 # set fish config directory
 #----------  Source Files -----------
 source $HOME/.config/fish/custom/functions.fish
+source $Private/private.fish
 source_custom env.fish
 source_custom alias.fish
 source_custom private.fish

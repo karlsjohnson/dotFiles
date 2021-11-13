@@ -6,7 +6,7 @@ source_custom aliases.sh
 source_custom env.sh
 source_custom plugins.sh
 source_custom setttings.sh
-source_custom private.sh
+source $Private/private.sh
 source_custom mac.sh
 #============ Soource Files ===============
 

@@ -6,6 +6,7 @@ set -gx HOSTOS (uname -s)
 
 # Set Enviormental Direcotry variables
 set -gx Documents $HOME/Documents
+set -gx Private $Text/Private
 set -gx Text $Documents/Text
 set -gx Bin $Documents/Bin
 set -gx Git $HOME/Git
