@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# above for zsh shells
-# Below for bash shells
 #!/bin/bash
 # to run first `chmod u+x file.sh`
 # then either `bash file.sh` or `./file.sh`
@@ -37,14 +34,14 @@ fi
 touch ~/.profile
 if [ "$Machine" = "MBP" ]; then
   echo "# Setup Homebrew install location for Apple Silicon" >> ~/.profile
-  echo "export PATH=\"/opt/homebrew/bin:$PATH\" >> ~/.profile" >> ~/.profile
+  echo "export PATH=\"/opt/homebrew/bin:\$PATH\"" >> ~/.profile
 fi
 
 echo "# Source bashrc file in the config directory" >> ~/.profile
 echo "if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi" >> ~/.profile
 
 echo "# Setup iTerm integration" >> ~/.profile
-echo "test -e \"${HOME}/.iterm2_shell_integration.bash\" && source \"${HOME}/.iterm2_shell_integration.bash\"" >> ~/.profile
+echo "test -e \"\${HOME}/.iterm2_shell_integration.bash\" && source \"\${HOME}/.iterm2_shell_integration.bash\"" >> ~/.profile
 
 # Setup bash files
 if [ -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
@@ -58,11 +55,11 @@ ln -s ~/Git/dotFiles/bash ~/.config/bash
 # if [ -d ~/.config/nvim ]; then rm -Rf ~/.config/nvim; fi
 if [ ! -d ~/.config/nvim ]; then mkdir ~/.config/nvim; fi
 if [ ! -d ~/.config/nvim/autoload ]; then mkdir ~/.config/nvim/autoload; fi
-if [ ! -f ~/.config/nvim/autoload/plug.vim ]; then rm -f ~/.config/nvim/autoload/plug.vim; fi
+if [ -f ~/.config/nvim/autoload/plug.vim ]; then rm -f ~/.config/nvim/autoload/plug.vim; fi
 ln -s ~/Git/dotFiles/nvim/autoload/plug.vim ~/.config/nvim/autoload/plug.vim
-if [ ! -f ~/.config/nvim/init.vim ]; then rm -f ~/.config/nvim/init.vim; fi
+if [ -f ~/.config/nvim/init.vim ]; then rm -f ~/.config/nvim/init.vim; fi
 ln -s ~/Git/dotFiles/nvim/init.vim ~/.config/nvim/init.vim
-if [ ! -d ~/.config/nvim/custom ]; then rm -Rf ~/.config/nvim/custom; fi
+if [ -d ~/.config/nvim/custom ]; then rm -Rf ~/.config/nvim/custom; fi
 ln -s ~/Git/dotFiles/nvim/custom ~/.config/nvim/custom
 
 # ----------------------------------
