@@ -13,6 +13,11 @@ source ~/Documents/Text/Private/private.sh
 source_custom mac.sh
 #============ Soource Files ===============
 
+ [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+# Add Fast node manager to prompt
+eval "$(fnm env)"
+
 # source bash prompt tools
 #source $HOME/.local/share/blesh/ble.sh
 
