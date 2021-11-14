@@ -29,49 +29,41 @@ fi
 #fi
 
 # ----------------------------------
-# -------------zsh-----------------
-# ----------------------------------
-# setup zprofile
-#[[ ! -f ~/.zprofile ]] || rm -f ~/.zprofile
-#  touch ~/.profile
-#  echo "# Set Zsh config location" >> ~/.zprofile
-#  echo "export ZDOTDIR=$HOME/.config/zsh" >> ~/.zprofile
-#if [ "$Machine" = "MBP" ]; then
-#  echo "creating MBP zprofile"
-#  echo "# Setup Homebrew install location for Apple Silicon" >> ~/.zprofile
-#  echo "eval \"\$(/opt/homebrew/bin/brew shellenv)\"" >> ~/.zprofile
-#fi
-#if [ "$Machine" = "MM" ]; then
-#  echo "creating MM zprofile"
-#fi
-
-## Link zsh config folder
-#if [ -d ~/.config/zsh ]; then rm -Rf ~/.config/zsh; fi
-#ln -s ~/Git/dotFiles/zsh ~/.config/zsh
-
-# ----------------------------------
 # -------------bash-----------------
 # ----------------------------------
 # setup profile
-# Add below to .profile for bash
-# add homebrew directory for Apple ARM
-#export PATH="/opt/homebrew/bin:$PATH"
-# Source bashrc file in the config directory
-#if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi
-# Link nvim config folder
-if [ -d ~/.config/bash/custom ]; then rm -Rf ~/.config/bash/custom; fi
-ln -s ~/Git/dotFiles/bash/custom ~/.config/bash/custom
-if [ -f ~/.config/bash/.bashrc ]; then rm -f ~/.config/bash/.bashrc ; fi
-ln -s ~/Git/dotFiles/bash/.bashrc  ~/.config/bash/.bashrc
 
+[[ ! -f ~/.profile ]] || rm -f ~/.profile
+touch ~/.profile
+if [ "$Machine" = "MBP" ]; then
+  echo "# Setup Homebrew install location for Apple Silicon" >> ~/.profile
+  echo "export PATH=\"/opt/homebrew/bin:$PATH\" >> ~/.profile" >> ~/.profile
+fi
+
+echo "# Source bashrc file in the config directory" >> ~/.profile
+echo "if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi" >> ~/.profile
+
+echo "# Setup iTerm integration" >> ~/.profile
+echo "test -e \"${HOME}/.iterm2_shell_integration.bash\" && source \"${HOME}/.iterm2_shell_integration.bash\"" >> ~/.profile
+
+# Setup bash files
+if [ -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
+ln -s ~/Git/dotFiles/bash ~/.config/bash
 
 
 # ----------------------------------
 # -------------nvim-----------------
 # ----------------------------------
 # Link nvim config folder
-if [ -d ~/.config/nvim ]; then rm -Rf ~/.config/nvim; fi
-ln -s ~/Git/dotFiles/nvim ~/.config/nvim
+# if [ -d ~/.config/nvim ]; then rm -Rf ~/.config/nvim; fi
+if [ ! -d ~/.config/nvim ]; then mkdir ~/.config/nvim; fi
+if [ ! -d ~/.config/nvim/autoload ]; then mkdir ~/.config/nvim/autoload; fi
+if [ ! -f ~/.config/nvim/autoload/plug.vim ]; then rm -f ~/.config/nvim/autoload/plug.vim; fi
+ln -s ~/Git/dotFiles/nvim/autoload/plug.vim ~/.config/nvim/autoload/plug.vim
+if [ ! -f ~/.config/nvim/init.vim ]; then rm -f ~/.config/nvim/init.vim; fi
+ln -s ~/Git/dotFiles/nvim/init.vim ~/.config/nvim/init.vim
+if [ ! -d ~/.config/nvim/custom ]; then rm -Rf ~/.config/nvim/custom; fi
+ln -s ~/Git/dotFiles/nvim/custom ~/.config/nvim/custom
 
 # ----------------------------------
 # -------------tmux-----------------
@@ -86,27 +78,6 @@ ln -s ~/Git/dotFiles/tmux/.tmux.conf.local ~/.tmux.conf.local
 # Link gitconfig file
 if [ -f ~/.gitconfig ]; then rm -f ~/.gitconfig; fi
 ln -s ~/Git/dotFiles/git/.gitconfig ~/.gitconfig
-
-# ----------------------------------
-# -------------fish-----------------
-# ----------------------------------
-# setup profile
-# Add below to .profile for bash
-# add homebrew directory for Apple ARM
-#export PATH="/opt/homebrew/bin:$PATH"
-# Source bashrc file in the config directory
-#if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi
-# Link nvim config folder
-if [ -d ~/.config/fish/custom ]; then rm -Rf ~/.config/fish/custom; fi
-ln -s ~/Git/dotFiles/fish/custom ~/.config/fish/custom
-if [ -f ~/.config/fish/config.fish ]; then rm -f ~/.config/fish/config.fish ; fi
-ln -s ~/Git/dotFiles/fish/config.fish  ~/.config/fish/config.fish
-if [ -f ~/.config/fish/fish_plugins ]; then rm -f ~/.config/fish/fish_plugins ; fi
-ln -s ~/Git/dotFiles/fish/fish_plugins  ~/.config/fish/fish_plugins
-
-
-
-
 
 echo "Setup done for" $Machine
 
