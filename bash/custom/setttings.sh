@@ -15,7 +15,7 @@ fi
 eval "$(fnm env)"
 
 # source bash prompt tools
+# Use line below instead
 #source $HOME/.local/share/blesh/ble.sh
-
 # Add this line at the end of .bashrc:
 [[ ${BLE_VERSION-} ]] && ble-attach
