@@ -26,6 +26,30 @@ fi
 #fi
 
 # ----------------------------------
+# -------------zsh-----------------
+# ----------------------------------
+#setup zprofile
+[[ -f ~/.zprofile ]] || rm -f ~/.zprofile
+  touch ~/.profile
+  echo "# Set Zsh config location" >> ~/.zprofile
+  echo "export ZDOTDIR=$HOME/.config/shell" >> ~/.zprofile
+
+if [ "$Machine" = "MBP" ]; then
+  echo "creating MBP zprofile"
+  echo "# Setup Homebrew install location for Apple Silicon" >> ~/.zprofile
+  echo "eval \"\$(/opt/homebrew/bin/brew shellenv)\"" >> ~/.zprofile
+fi
+
+if [ "$Machine" = "MM" ]; then
+  echo "creating MM zprofile"
+fi
+
+# Link zsh config folder
+if [ -d ~/.config/shell ]; then rm -Rf ~/.config/shell; fi
+ln -s ~/Git/dotFiles/shell ~/.config/shell
+
+
+# ----------------------------------
 # -------------bash-----------------
 # ----------------------------------
 # setup profile
@@ -38,13 +62,13 @@ if [ "$Machine" = "MBP" ]; then
 fi
 
 echo "# Source bashrc file in the config directory" >> ~/.profile
-echo "if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi" >> ~/.profile
+echo "if [ -f ~/.config/shell/.bashrc ]; then . ~/.config/shell/.bashrc; fi" >> ~/.profile
 
 echo "# Setup iTerm integration" >> ~/.profile
 echo "test -e \"\${HOME}/.iterm2_shell_integration.bash\" && source \"\${HOME}/.iterm2_shell_integration.bash\"" >> ~/.profile
 
 # Setup bash files
-if [ -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
+if [ ! -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
 ln -s ~/Git/dotFiles/bash ~/.config/bash
 
 

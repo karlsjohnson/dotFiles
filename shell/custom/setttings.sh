@@ -14,6 +14,9 @@ fi
 # Add Fast node manager to prompt
 eval "$(fnm env)"
 
+
+shopt -s cdspell
+
 # source bash prompt tools
 # Use line below instead
 #source $HOME/.local/share/blesh/ble.sh

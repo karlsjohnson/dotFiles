@@ -1,17 +1,9 @@
-# Aliases
-alias scf="source ~/.config/bash/.bashrc"
-# exa aliases instead of ls
-alias ls='exa --icons --group-directories-first'
-alias la='exa --icons -a --group-directories-first'
-alias ll='exa --icons -a -l --group-directories-first'
-
-
 # Initial Aliases for All
 
 # ----------Standard Tool Aliases--------------
 
 # Source init files
-alias szsh=". ~/.config/zsh/.zshrc"
+alias szsh=". ~/.config/shell/.zshrc"
 alias ezsh="exec zsh"
 
 # Copy Path to Clipboard
@@ -62,7 +54,7 @@ alias pu="sudo chmod -R 700"
 
 # ----------Act Aliases--------------
 
-alias act='Bash ~/Documents/Text/Code/act.sh'
+alias act='Bash ~/Documents/Text/Bin/act.sh'
 alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
 
 # ----------Program Aliases--------------
@@ -77,10 +69,8 @@ alias ll='exa --icons -a -l --group-directories-first'
 
 
 # zoxide (better cd)
-# j instead of cd
-alias cd='z'
 # brings up list of folders
-alias cdf='zi'
+alias zz='zi'
 
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"
