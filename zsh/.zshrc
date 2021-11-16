@@ -13,5 +13,3 @@ source_config aliases
 [[ "$hostOS" = "Darwin" ]] && source_config mac
 
 echo "My Initialization Process For $hostName  Complete"
-
-
