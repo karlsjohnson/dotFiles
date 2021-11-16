@@ -32,7 +32,7 @@ fi
 [[ -f ~/.zprofile ]] || rm -f ~/.zprofile
   touch ~/.profile
   echo "# Set Zsh config location" >> ~/.zprofile
-  echo "export ZDOTDIR=$HOME/.config/shell" >> ~/.zprofile
+  echo "export ZDOTDIR=$HOME/.config/zsh" >> ~/.zprofile
 
 if [ "$Machine" = "MBP" ]; then
   echo "creating MBP zprofile"
@@ -44,10 +44,9 @@ if [ "$Machine" = "MM" ]; then
   echo "creating MM zprofile"
 fi
 
-# Link zsh config folder
-if [ -d ~/.config/shell ]; then rm -Rf ~/.config/shell; fi
-ln -s ~/Git/dotFiles/shell ~/.config/shell
-
+# Link zsh/bash config folder
+if [ -d ~/.config/zsh ]; then rm -Rf ~/.config/zsh; fi
+ln -s ~/Git/dotFiles/zsh ~/.config/zsh
 
 # ----------------------------------
 # -------------bash-----------------
@@ -62,15 +61,16 @@ if [ "$Machine" = "MBP" ]; then
 fi
 
 echo "# Source bashrc file in the config directory" >> ~/.profile
-echo "if [ -f ~/.config/shell/.bashrc ]; then . ~/.config/shell/.bashrc; fi" >> ~/.profile
+echo "if [ -f ~/.config/bash/.bashrc ]; then . ~/.config/bash/.bashrc; fi" >> ~/.profile
 
 echo "# Setup iTerm integration" >> ~/.profile
 echo "test -e \"\${HOME}/.iterm2_shell_integration.bash\" && source \"\${HOME}/.iterm2_shell_integration.bash\"" >> ~/.profile
 
-# Setup bash files
-if [ ! -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
+if [ -d ~/.config/bash ]; then rm -Rf ~/.config/bash; fi
 ln -s ~/Git/dotFiles/bash ~/.config/bash
 
+[[ ! -f ~/.bashrc ]] || rm -f ~/.bashrc
+ln -s ~/Git/dotFiles/bash/.bashrc ~/.bashrc
 
 # ----------------------------------
 # -------------nvim-----------------

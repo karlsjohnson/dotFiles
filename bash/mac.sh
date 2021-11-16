@@ -1,23 +1,10 @@
 # Initial Mac Aliases
 
-alias cdt="cd '$Text'"
-alias cdb="cd '$Text'/Bin"
-alias cdd="cd ~/Documents"
-alias cdw="cd '$Downloads'"
-alias cdp="cd ~/Desktop"
-alias cdg="cd ~/Git"
-alias cdr="cd ~/"
-alias cddf="cd ~/Git/dotFiles"
-alias cdth="cd ~/Git/Thoughts"
-alias cdnb="cd ~/Git/Notebook"
 # Stop Quarantining App  add path to app you want to stop
 # command "/Applications/SomeApp.app"
 alias stopQ="sudo xattr -dr com.apple.quarantine"
 # restart without login
 alias autorestart="sudo fdesetup authrestart"
-
-alias shuv="ssh $ServerUVM"
-
 
 function macUpdate {
   echo "brew update starting"
@@ -35,22 +22,7 @@ alias dockfast="defaults write com.apple.Dock autohide-delay -float 0 && killall
 alias dockon="defaults delete com.apple.Dock autohide-delay && killall Dock"
 
 
-
-# Aliases for MacBook
-if [ "$comType" = "Laptop" ]; then
-  alias ship="ssh $ServerMMIP"
-  alias shmm="ssh $ServerMM"
-  alias shzt="ssh $ServerMMZT"
-
-; fi
-
-# Aliases for MacMini
-if [ "$comType" = "Server" ]; then
-alias cdhdd="cd /Volumes/HDD"
-
 function restartSSH {
   sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
   sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 }
-
-; fi

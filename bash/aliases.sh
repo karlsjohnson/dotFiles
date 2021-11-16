@@ -1,5 +1,5 @@
 # Aliases
-alias scf="source ~/.config/shell/.bashrc"
+alias scf="source ~/.config/bash/.bashrc"
 # exa aliases instead of ls
 alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'

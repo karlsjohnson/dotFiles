@@ -3,7 +3,12 @@
 # ----------Standard Tool Aliases--------------
 
 # Source init files
-alias szsh=". ~/.config/shell/.zshrc"
+function scf {
+  [[ ! -f $ZDOTDIR/.zcompdump ]] || rm -f $ZDOTDIR/.zcompdump
+  . ~/.config/zsh/.zshrc
+}
+#alias scf=". ~/.config/zsh/.zshrc"
+#alias dcd="rm $ZDOTDIR/.zcompdump"
 alias ezsh="exec zsh"
 
 # Copy Path to Clipboard
@@ -177,3 +182,4 @@ function brew_install {
         brew install $1 && echo "$1 is installed"
     fi
 }
+
