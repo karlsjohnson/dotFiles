@@ -4,8 +4,8 @@
 source "$ZDOTDIR/zsh-functions.zsh"
 
 # Load config files
-source_private private
 source_config env
+source_private private
 source_config settings
 source_config aliases
 
