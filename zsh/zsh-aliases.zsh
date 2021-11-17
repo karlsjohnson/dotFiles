@@ -59,8 +59,7 @@ alias pu="sudo chmod -R 700"
 
 # ----------Act Aliases--------------
 
-alias act='Bash ~/Documents/Text/Bin/act.sh'
-alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
+alias act='Bash ~/Documents/Text/Code/act.sh'
 
 # ----------Program Aliases--------------
 
