@@ -53,13 +53,19 @@ if type brew &>/dev/null; then
 fi
 
 # Add plugin zsh-syntax-highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Add plugin zsh-autosuggestions
 #If there is an error with syntax highlighting, add export below
 #export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
 
+if [ "$hostName" = "MBPKSJ" ]; then
+  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
-# Add plugin zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ "$hostName" = "MacMini" ]; then
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 
 #--------------------------------------------
