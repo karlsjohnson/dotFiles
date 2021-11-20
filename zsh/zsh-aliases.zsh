@@ -63,6 +63,7 @@ alias act='Bash ~/Documents/Text/Code/act.sh'
 alias ics='Bash ~/Documents/Text/Code/imgSync.sh'
 alias icr='Bash ~/Documents/Text/Code/imgSync.sh restore'
 alias icb='Bash ~/Documents/Text/Code/imgSync.sh backup'
+alias icbd='Bash ~/Documents/Text/Code/imgSync.sh backup delete'
 alias icd='Bash ~/Documents/Text/Code/imgSync.sh delete'
 
 # ----------Program Aliases--------------
