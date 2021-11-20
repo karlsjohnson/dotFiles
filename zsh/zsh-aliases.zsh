@@ -60,6 +60,10 @@ alias pu="sudo chmod -R 700"
 # ----------Act Aliases--------------
 
 alias act='Bash ~/Documents/Text/Code/act.sh'
+alias ics='Bash ~/Documents/Text/Code/imgSync.sh'
+alias icr='Bash ~/Documents/Text/Code/imgSync.sh restore'
+alias icb='Bash ~/Documents/Text/Code/imgSync.sh backup'
+alias icd='Bash ~/Documents/Text/Code/imgSync.sh delete'
 
 # ----------Program Aliases--------------
 
@@ -113,6 +117,13 @@ alias vid="nvim --cmd 'cd $Git' $Git/dotFiles/readme.md"
 alias vsc="nvim -S $Sessions/current.vim"
 alias vsd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias vsg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
+
+# Docusaurus
+function docuStart {
+  cd $Code/Main
+  npm run start
+}
+
 
 # ----------Docker Aliases--------------
 
