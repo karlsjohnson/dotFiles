@@ -4,7 +4,9 @@
 # command "/Applications/SomeApp.app"
 alias stopQ="sudo xattr -dr com.apple.quarantine"
 # restart without login
-alias autorestart="sudo fdesetup authrestart"
+alias astart="sudo fdesetup authrestart"
+# login remotly to apple keychain
+alias alogin="security -v unlock-keychain ~/Library/Keychains/login.keychain-db"
 
 function macUpdate {
   echo "brew update starting"
