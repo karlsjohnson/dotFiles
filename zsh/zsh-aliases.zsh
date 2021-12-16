@@ -93,12 +93,14 @@ alias tmkss="tmux kill-session"
 
 # Git
 alias gi="git"
-alias gis="git status"
-alias gic="git commit -a -m "
-alias gia="git add --all"
-alias gih="git push origin"
-alias gil="git pull"
-alias gicl="git clone"
+alias gist="git status"
+alias gicm="git commit -a -m "
+alias giaa="git add --all"
+alias giph="git push origin"
+alias gipl="git pull"
+alias gico="git checkout"
+alias gimr="git merge"
+alias girb="git rebase"
 
 # Complete Git Add,Commit,Push
 function gich {
@@ -107,6 +109,7 @@ function gich {
   git push
   git status
 }
+
 
 # Text Editor
 alias vi="nvim"
