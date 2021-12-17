@@ -1,3 +1,5 @@
 [user]
 	name = Karl Johson
 	email = karl.s.johnson@gmail.com
+[color]
+	ui = auto

@@ -85,7 +85,7 @@ bindkey '^I' $fzf_default_completion
 
 
 # add zoxide to shell
-eval "$(zoxide init bash)"
+eval "$(zoxide init zsh)"
 export _ZO_DATA_DIR=$HOME/.config/zoxide
 alias zz="zi"
 
