@@ -6,6 +6,6 @@ function source_config() {
 }
 
 function source_private() {
-    [ -f "$HOME/Documents/Text/Private/zsh-$1.zsh" ] && source "$HOME/Documents/Text/Private/zsh-$1.zsh"
+    [ -f "$HOME/Git/Private/zsh-$1.zsh" ] && source "$HOME/Git/Private/zsh-$1.zsh"
 }
 

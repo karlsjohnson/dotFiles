@@ -59,12 +59,13 @@ alias pu="sudo chmod -R 700"
 
 # ----------Act Aliases--------------
 
-alias act='Bash $Text/Private/act.sh'
-alias ics='Bash $Text/Private/imgSync.sh'
-alias icr='Bash $Text/Private/imgSync.sh restore'
-alias icb='Bash $Text/Private/imgSync.sh backup'
-alias icbd='Bash $Text/Private/imgSync.sh backup delete'
-alias icd='Bash $Text/Private/imgSync.sh delete'
+alias act='Bash $Git/Private/act.sh'
+alias bmd='Bash make.sh build'
+alias ics='Bash $Git/Private/imgSync.sh'
+alias icr='Bash $Git/Private/imgSync.sh restore'
+alias icb='Bash $Git/Private/imgSync.sh backup'
+alias icbd='Bash $Git/Private/imgSync.sh backup delete'
+alias icd='Bash $Git/Private/imgSync.sh delete'
 
 # ----------Program Aliases--------------
 
