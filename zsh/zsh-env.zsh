@@ -20,6 +20,8 @@ export Code=$Documents/Text/Code
 export Downloads=$HOME/Sync/Downloads
 export Git=$HOME/Git
 export DOT=$Git/dotfiles
+export Zips=$HOME/Sync/AppData/Zips
+export Sync=$HOME/Sync
 
 # Set Paths
 # Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
