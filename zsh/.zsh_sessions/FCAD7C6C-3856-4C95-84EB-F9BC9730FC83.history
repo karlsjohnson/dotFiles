@@ -1,0 +1,1000 @@
+z new
+z Java
+fnm use
+z test
+git checkout mbp
+git add --all
+git commit -a -m "new file"
+git push mbp
+git push
+git checkout master
+git checkout main
+git checkout mbp
+git checkout main
+git merge mbp
+git push
+git checkout mbp
+ls
+git add --all
+git commit -a -m "mod"
+git push
+git checkout main
+git add --all
+git commit -a -m "mod2-main"
+git push
+gich "2nd Mod"
+git merge mbp
+git merge mbp
+gich "merge mod"
+gich "main mods"
+git checkout mbp
+gich "mbp mods"
+git checkout main 
+git merge mbp
+gich "mbp mods merge"
+git checkout mbp
+git merge main
+gich "main merge"
+git push orgin
+git push mbp
+git checkout main
+git push
+git push orgin
+git push origin
+git checkout mbp
+git merge main
+gich "edit"
+gich "edit"
+gich "edit"
+gich "edit"
+git add .gitignore
+gich "edit"
+scf
+gico main
+git merge mbp
+gih
+gico mbp
+scf
+gime main
+gich "edit"
+gico main
+git rebase mbp
+gich "edit"
+..
+mkdir make
+git init
+ls
+la
+rm -rf .git
+z make
+git init
+rm -rf .git
+git init -b master
+git add --all
+git commit -a -m "new"
+git add --all
+git commit -a -m "new"
+gh
+git remote add origin https://github.com/karlsjohnson/make.git
+git push -u origin
+git push --set-upstream origin master
+git push --set-upstream origin master
+git push
+gipl
+la
+rm .DS_Store
+gipl
+giaa
+gicm "mm"
+giph
+gipl
+git pull
+git config pull.ff only 
+git reset --hard
+git clean -fd
+git fetch
+git rebase origin/master
+git pull
+git reset --hard HEAD^
+git pull
+git reset
+git pull
+la
+rm .DS_Store
+git pull
+giph
+git branch
+git config --global color.ui auto
+gich "new"
+git checkout -m mbp
+git checkout -c mbp
+git checkout -b mbp
+gich "mbp"
+gico master
+gich "master"
+git merge mbp
+git diff
+gich "merge"
+gico mbp
+scf
+gimr master
+gich "merge"
+ git push --set-upstream origin mbp
+gich "merge"
+gico master
+gich "merge"
+gimr mbp
+gich "merge"
+git log
+..
+exit
+z Javascript
+~
+z dot
+z Git
+..
+z Documents
+z Gi
+z Git
+z ..
+z Git
+z Doc
+z Documents
+z Documents
+z ..
+z Git
+z Doc
+z query -ls
+z
+zz
+z Git
+zz
+eval "$(zoxide init bash)"
+export _ZO_DATA_DIR=$HOME/.config/zoxide
+scf
+z Do
+z
+z Documents
+z Gi
+zoxide init
+exit
+exit
+z Git
+mkdir side
+ls
+rm side
+rm -rf side
+exit
+z Git
+z
+z Documents
+z Git
+z dotf
+z dotFiles
+gich "git alaises"
+z ~/Documents
+z Text
+z Code
+z Javascript
+..
+z dotf
+z java
+z new
+..
+..
+z blockchain-developer-bootcamp
+z new
+z blo
+fnm use
+..
+z Homepage
+fnm use
+echo "LTS/*" > .nvmrc 
+fnm use
+npm build
+npm build start
+npm start build
+npm run build
+ls
+ npm run build
+act Main
+act Main
+act Main
+act Main
+npm run build
+ls
+npm install
+yarn install
+npm run build
+act Main
+npm install
+act Main
+npm run start
+yarn --version
+yarn -v
+yarn --version
+yarn
+npm install --global yarn
+_yarn
+_yarn
+yarn
+yarn install
+npm run start
+npm run build
+fnm use v16.13.0
+npm run build
+ls
+npm run build
+npm run build
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+fnm use v16.13.0
+act Main
+npm install
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+act Main
+npm run start
+act Main
+npm run build
+npm run build --out-dir ~/Git/side
+mkdir make
+npm run build --out-dir make
+npm run build --out-dir /make
+npm run build --out-dir make
+npm run build --out-make
+z make
+ls
+..
+npm run build --out-dir "/make"
+npm run build --out-dir ./make
+npm run build --out-dir './make'
+npm run build --out-dir=make
+npm run build
+act Main
+fnm use 16.13.1
+npm run build
+ls
+npm run start
+npm install yarn
+npm run build
+npm install
+npm run build
+exit
+exit
+z Home
+npm run build
+..
+yarn --version
+npx create-docusaurus@latest Main classic
+npx create-docusaurus@latest Main classic
+cd Main
+npm run start
+npm run start
+npm install
+npm run start
+yarn install
+npm run start
+npm install --save remark-math@3 rehype-katex@4 hast-util-is-element@1.1.0
+npm run start
+npm start build --out-dir=make
+npm run build --out-dir=make
+npm run build --out-dir=/make
+npm run build --out-dir=./make
+exit
+z Main
+mkdir make
+ls
+exit
+z Docusaurus
+gich "adding install to make file"
+bash make.sh build
+npm run serve
+z Doc-W
+z Docusaurus-W
+npm run serve
+z Docus
+gich "change build"
+gich "change build"
+bash make.sh build
+zz
+..
+z Docusaurus-Work
+npm run serve
+exit
+z Git/Docusaurus-Work
+fnm use
+fnm uninstall v16.13.0
+fnm default v16.13.1
+fnm list
+npm run start
+npm install --save remark-math@3 rehype-katex@4 hast-util-is-element@1.1.0
+npm run start
+..
+z Docusaurus
+bash make.sh install
+bash make.sh install
+z Docusaurus-W
+npm run start
+z Docusa
+exit
+z Git
+git clone https://github.com/karlsjohnson/Docusaurus.git
+ls
+z Docusaurus
+ls
+echo "LTS/*" > .nvmrc 
+echo ".DS_Store" > .gitignore
+la
+bat .gitignore
+giaa
+gich "New Files"
+bash make.sh
+bash make.sh done
+bash make.sh done
+bash make.sh done
+gich "Add make file"
+pwd
+bash make.sh done
+bash make.sh done
+bash make.sh done
+pwd
+date
+date
+bash make.sh done
+bash make.sh done
+bash make.sh done
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+fnm install lts
+fnm install LTS
+fnm install -lts
+..
+z Docusaurus-Work
+ls
+echo "lts/*" >> .node-version
+la
+bat .node-version
+fnm install
+npm install --global yarn
+fnm use
+npm install --global yarn
+npx create-docusaurus@latest
+npx create-docusaurus@latest Homepage classic
+..
+rm -rf Docusaurus-Work
+rm -rf Docusaurus-Work
+npx create-docusaurus@latest Docusaurus-Work classic
+ls
+cd Docusaurus
+bash make.sh install
+bash make.sh install
+fnm use lts
+brew update
+brew upgrade
+fnm list
+fnm install lts-latest
+cp -f ~/Git/Docusaurus/docusaurus.config.js ~/Git/Docusaurus-Work/docusaurus.config.js
+cp -f ~/Git/Docusaurus/sidebars.js ~/Git/Docusaurus-Work/sidebars.js
+rsync $rOpt ~/Git/Docusaurus/css ~/Git/Docusaurus-Work/src/css
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+bash make.sh install
+exit
+~
+ls
+z Desk
+z ~/Desktop
+ls
+code Safari\ Bookmarks.html
+ps aux | grep bird
+ps aux | grep bird
+ps -fl -C 642
+sudo renice -n -10 -p 642
+exit
+exit
+z Mark
+z dotf
+z Mark
+gich "add my files"
+gich "add my files"
+bash make.sh build
+z Docu
+bash make.sh build
+bash make.sh build
+bash make.sh build
+bash make.sh build
+bash make.sh build
+gich "move doc personal to life"
+z Docusaurus-Work
+npm run serve
+z Mark
+gich "move personal to life"
+ls
+z Git
+mkdir Markdown
+z Markdown
+git remote add origin https://github.com/karlsjohnson/Markdown.git
+..
+rm -rf Markdown
+git clone https://github.com/karlsjohnson/Markdown.git
+z Markdown
+..
+la
+cp .gitignore /Markdown/
+cp .gitignore /Markdown/
+cp .gitignore Markdown/
+z Markdown
+la
+bat .gitignore
+gich "add gitignore"
+..
+mkdir LearnJS
+z LearnJS
+git clone https://github.com/karlsjohnson/LearnJS.git
+la
+..
+rm -rf LearnJS
+la
+git clone https://github.com/karlsjohnson/LearnJS.git
+ls
+z LearnJS
+la
+gich "combining learning files for javascript"
+git checkout -b mbp
+..
+git clone https://github.com/karlsjohnson/Private.git
+la
+cp .gitignore Private/
+cp .gitignore LearnJS/
+z LearnJS
+gich "add gitignore"
+git push --set-upstream origin mbp
+gich "add gitignore"
+git checkiout master
+git checkout main
+git merge mbp
+z Priv
+..
+z Private
+gich "add gitignore"
+z Learn
+z Pri
+gich "add files"
+scf
+act
+z dotf
+gich "add files"
+z Pri
+gich "add files"
+z Docusauru
+~
+~/Desktop
+ls
+code Safari\ Bookmarks.html
+exit
+brew services stop nginx
+brew services start nginx
+exit
+z /opt/homebrew/etc/nginx/
+ls
+code nginx.conf
+ls
+z Git
+z /opt/homebrew/etc/nginx/
+ls
+bat nginx.conf
+ln -s ~/Git/Private/nginx.conf /opt/homebrew/etc/nginx/nginx.conf
+brew services stop nginx
+brew services start nginx
+exit
+exit
+gipl
+z pri
+gipl
+gist
+gich "update files"
+gist
+z dotf
+gis
+gist
+z Learn
+gist
+z karl
+..
+z karlsjohnson.github.io
+gist
+z Mark
+gist
+gich "update links"
+z Docu
+gist
+exit
+ship
+exit
+shzt
+exit
+z Git
+z Pri
+ls
+imgSync
+bash imgSync restore
+bash imgSync.sh restore
+bash imgSync.sh restore
+bash imgSync.sh restore
+echo $Private
+echo $Private
+bash imgSync.sh restore
+bash imgSync.sh restore
+icd
+exit
+act bkSafe
+exit
+brew services restart nginx
+exit
+ship
+ship
+shzt
+shzt
+ship
+shmm
+ship
+ship
+exit
+icr
+icr
+icr
+exit
+ssh elecknight@192.168.1.111
+ssh elecknight@192.168.1.111
+exit
+ssh elecknight@192.168.1.111
+exit
+wg
+exit
+ssh pi@192.168.1.97
+ssh pi@192.168.1.97
+ssh pi@192.168.1.97
+ssh pi@192.168.1.97
+ssh pi@192.168.1.97
+ssh pi@192.168.1.99
+ssh pi@192.168.1.97
+ssh pi@192.168.1.99
+ssh pi@192.168.1.99
+ssh pi@192.168.1.99
+exit
+.ssh
+lsa
+lsa
+ls
+scp omv.pub elecknight@192.168.1.3:
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3 -i ~/.ssh/sshacess
+la
+ssh elecknight@192.168.1.3 -i ~/.ssh/sshaccess
+touch sshacess
+ssh elecknight@192.168.1.3 -i ~/.ssh/sshacess
+ssh-copy-id
+ssh-copy-id elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@omv.local
+ssh-keygen -e -f ~/.ssh/omv.pub
+ls
+rm sshacess
+ssh elecknight@omv.local  -i ~/.ssh/sshacess
+ssh elecknight@omv.local
+ssh elecknight@omv.local  -i ~/.ssh/sshaccess
+ssh-keygen -e -f ~/.ssh/omv.pub
+ssh elecknight@192.168.1.3 -i ~/.ssh/sshaccess
+ssh elecknight@192.168.1.3 -i ~/.ssh/omv
+la
+more config
+vim config
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+exit
+.ssh
+ssh-keygen -e -f omv.pub
+ssh-keygen -e -f
+ssh-keygen
+ssh-keygen -e -f omv.pub
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.3
+exit
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@nuc.local
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+.ssh
+ls
+ssh-keygen -e -f id_rsa.pub
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh test@192.168.1.3
+ssh test@192.168.1.3
+ssh test@192.168.1.3
+ssh test@192.168.1.3
+ssh test@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh test@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh root@192.168.1.3
+ssh-keygen -e -f id_rsa.pub
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+ssh test@192.168.1.3
+ssh test@192.168.1.3
+exit
+exit
+z dotf
+gist
+gich "update links"
+gist
+gich "update links"
+z Pri
+gist
+gich "update start"
+z Mark
+gich "Blog Post"
+gist
+git push
+exit
+brew update
+exit
+ssh elecknight@192.168.1.3
+ssh elecknight@192.168.1.3
+exit
+ssh elecknight@192.168.1.4
+ssh elecknight@172.22.2.3
+ssh elecknight@172.22.2.3
+ssh elecknight@172.22.2.2
+ssh elecknight@172.22.2.2
+ssh root@172.22.2.2
+ssh root@172.22.2.2
+exit
+ssh root@172.22.2.133
+exit
+ssh root@172.22.2.4
+ssh root@172.22.2.4
+.ssh
+ls
+ssh-keygen -e -f id_rsa.pub > id_rsa_omv.pub
+more id_rsa_omv.pub
+ssh elecknight@172.22.2.4
+ssh elecknight@172.22.2.4
+ssh elecknight@172.22.2.4
+ssh elecknight@172.22.2.4
+ssh root@172.22.2.4
+ssh root@172.22.2.4
+ssh root@172.22.2.4
+ssh elecknight@172.22.2.4
+ssh elecknight@172.22.2.4
+exit
+scp elecknight@172.22.2.5:configs/karl.conf ~/
+exit
+ssh elecknight@172.22.2.5
+ssh elecknight@172.22.2.5
+ssh elecknight@172.22.2.5
+ssh root@172.22.2.5
+ssh elecknight@172.22.2.5
+curl -L https://install.pivpn.io | bash
+sudo curl -L https://install.pivpn.io | bash
+ssh elecknight@172.22.2.5
+ssh elecknight@172.22.2.5
+exit
+brew update && brew upgrade
+Hugo
+ls
+hugo new site new_site
+ls
+la
+cd new_site
+ls
+ls
+cd content
+ls
+..
+hugo new a.md
+hugo new dir/b.md
+hugo server -D
+hugo server -D
+hugo server -D
+hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
+hugo new post/first.md
+hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
+scp ~/.ssh/dhs.pub dh_b75s8k@iad1-shared-d12-01.dreamhost.com:
+ssh dhs
+exit
+brew update && brew upgrade
+brew install hugo
+hugo
+which hugo
+hugo version
+z Tex
+ls
+cd hugo
+hugo -help
+hugo completion
+hugo completion zsh
+hugo -help
+ls
+cd new_site
+git init
+git submodule add https://github.com/SteveLane/hugo-icon.git themes/hugo-icon
+hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
+ls
+ls
+hugo server
+hugo server
+hugo
+ls
+..
+hugo new karlsjohnson
+hugo new site karlsjohnson
+ls
+cd karlsjohnson
+cd karlsjohnson
+hugo server
+hugo server
+hugo server
+hugo server
+hugo server
+..
+..
+cd ..
+ls
+ls
+cd ..
+ls
+z Tex
+ls
+cd hugo
+ls
+hugo new site karlsjohnson
+karlsjohnson
+hugo server --source=exampleSite
+hugo server --source=exampleSite
+hugo server --source=themes/LoveIt/exampleSite
+hugo server
+hugo server
+hugo server
+..
+..
+z Text/hugo
+hugo new site karlsjohnson
+karlsjohnson
+hugo server
+hugo server
+hugo server
+hugo server
+hugo server
+z hugo
+ls
+hugo new site karlsjohnson
+karlsjohnson
+hugo server
+hugo server
+hugo new about.md
+hugo server
+hugo server
+hugo new post 3d printer
+hugo post 3d printer
+hugo new post/3d Printer
+hugo new posts/20220328-first_post.md
+hugo server
+hugo server
+hugo
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dh_u6c9by@karl.dreamhosters.com
+.ssh
+~/.ssh
+ssh-keygen -t dhs
+ssh-keygen -t
+ssh-keygen -t rsa
+ls -a
+rm dhs$'\033'\[D$'\033'\[D$'\033'\[D*
+la
+ssh-keygen -t rsa
+la
+scp ~/.ssh/id_rsa.pub dh_u6c9by@karl.dreamhosters.com:
+scp ~/.ssh/dhs.pub dh_u6c9by@karl.dreamhosters.com:
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dhs
+ssh dhs
+z Hugo
+karlsjohnson
+public
+pwd
+act bkDH
+ssh dhs
+ssh dh_asujht@ksj.dreamhosters.com
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dh_u6c9by@karl.dreamhosters.com
+ssh dh_asujht@ksj.dreamhosters.com
+ssh dh_asujht@ksj.dreamhosters.com
+scp ~/.ssh/dhs.pub dh_asujht@ksj.dreamhosters.com:
+ssh dh_asujht@ksj.dreamhosters.com
+ssh dh_asujht@ksj.dreamhosters.com
+ssh dhs
+ssh dhs
+act bkDH
+act bkDH
+ssh dh_b75s8k@iad1-shared-d12-01.dreamhost.com
+ssh dhs
+..
+hugo server
+hugo
+act bkDHS
+ssh dhs
+act bkDHS
+ssh dhs
+act upKSJ
+hugo server
+act upKSJ
+z dotf
+z hugo
+ssh elecknight@172.22.2.3
+ssh mm
+ssh mm
+z Priva
+gich "Start Link update"
+z karls
+hugo server
+act upKSJ
+scf
+mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
+z priv
+gich "1Password CLI"
+git pull
+ssh -T git@github.com
+ssh -T git@github.com
+ssh -T git@github.com
+ssh dhs
+ssh-add -l
+~
+ls
+ls -a
+cd .1password
+ls
+ssh mm
+ssh-add -l
+ssh dhs
+ssh dhs
+ssh-keygen -e -f ~/.ssh/omv.pub
+~/.ssh
+ssh-keygen -t rsa
+ls
+ssh-keygen -e -f ~/.ssh/omv6.pub
+ls
+ssh elecknight@172.22.2.4
+ssh elecknight@172.22.2.4
+ssh omv
+ssh omv
+exit
+act bkSystem
+ssh omv
+ssh omv
+xi
+ssh omv
+ssh omv
+act bkCore
+act bkCore
+z hugo
+mkdir -p themes/hugo-geekdoc/
+ls
+curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz | tar -xz -C themes/hugo-geekdoc/ --strip-components=1
+cd themes
+ls
+cd hugo-geekdoc
+ls
+sshfs
+exit
+brew cask list
+brew list --cask
+brew list
+ssh root@172.22.2.5
+ssh root@172.22.2.5
+sudo apt update -y && sudo apt upgrade -y
+apt update
+ssh root@172.22.2.5
+ssh elecknight@172.22.2.5
+ssh elecknight@172.22.2.5
+ssh-add -K
+ssh-add
+ssh-add -help
+brew install --cask 1password/tap/1password-cli
+brew update
+brew update && brew upgrade
+top --version
+top --version
+top --version
+top --version
+op --version
+op --version
+op --help
+~/.ssh
+ssh-keygen -t ed25519
+ls
+scp ~/.ssh/pivpn.pub vpn:
+ssh vpn
+ssh vpn
+ssh vpn
+ls
+ssh omv
+ssh vpn
+sh vpn
+ssh vpn
+ssh vpn
+scp vpn:configs/karl.conf ~/Git
+scp vpn:configs/*.conf ~/Git
+scp vpn:configs/* ~/Git
+scp vpn:configs/*.* ~/Git
+scp vpn:configs/karl.conf ~/Git
+scp vpn:configs/kalin.conf ~/Git
+scp vpn:configs/trista.conf ~/Git
+scp vpn:configs/rowen.conf ~/Git
+ssh vpn
+ssh vpn
+ssh vpn
+ssh vpn
+exit
+act upKSJ
+act upKSJ
+exit
+ssh vpn
+exit
+nvim
+exit
