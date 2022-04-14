@@ -19,10 +19,10 @@ alias shutdown="sudo shutdown -P now"
 alias reboot="sudo shutdown -r now"
 
 # List Files
-alias la='ls -a'
-alias ll="ls -lha"
-alias lls="ls -lhSa"
-alias llt="ls -lhta"
+#alias la='ls -a'
+#alias ll="ls -lha"
+#alias lls="ls -lhSa"
+#alias llt="ls -lhta"
 
 # Remove Folder by Force
 alias rmd='rm -rf'
@@ -75,7 +75,7 @@ alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git
 #exa
 alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'
-alias ll='exa --icons -a -l --group-directories-first'
+alias ll='exa --icons -a -l --group --group-directories-first'
 
 
 # zoxide (better cd)
