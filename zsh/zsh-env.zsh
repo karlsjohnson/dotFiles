@@ -15,7 +15,7 @@ HISTFILE=$ZDOTDIR/.zsh_history
 export Documents=$HOME/Documents
 export Backup=$Documents/Backup
 export Text=$Documents/Text
-export Bin=$Documents/Bin
+export bash=$Git/Private/bash
 export Code=$Documents/Text/Code
 export Downloads=$HOME/Sync/Downloads
 export Git=$HOME/Git
@@ -25,7 +25,7 @@ export Sync=$HOME/Sync
 
 # Set Paths
 # Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$Bin:$PATH
+export PATH=$bash:$PATH
 # Used when running homwbrew in intel/m1 state
 #export PATH=/opt/homebrew/bin:$PATH
 
