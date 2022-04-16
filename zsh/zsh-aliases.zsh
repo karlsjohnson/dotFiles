@@ -57,9 +57,21 @@ alias ownrEA='sudo chown -R $userGroupA'
 alias pug="sudo chmod -R 770"
 alias pu="sudo chmod -R 700"
 
-# ----------Act Aliases--------------
+# ----------Bash Aliases--------------
 
-alias act='Bash $Git/Private/bash/act.sh'
+alias runx='chmod u+x'
+#alias act='Bash $Git/Private/bash/act.sh'
+# Docusaurus
+function b {
+  bash $1.sh $2 $3 $4 $5
+}
+
+alias mySync="rsync -ah --progress --delete --exclude-from $bash/rsync.txt"
+alias mySyncHD="rsync -ah --progress --delete --exclude-from $bash/rsyncHD.txt"
+alias mySyncPM="rsync -ah --progress --delete --exclude-from $bash/rsyncPM.txt"
+
+
+
 
 # ----------Program Aliases--------------
 
@@ -87,18 +99,18 @@ alias tmk="tmux kill-server"
 alias tmkss="tmux kill-session"
 
 # Git
-alias gi="git"
-alias gist="git status"
-alias gicm="git commit -a -m "
-alias giaa="git add --all"
-alias giph="git push origin"
-alias gipl="git pull"
-alias gico="git checkout"
-alias gimr="git merge"
-alias girb="git rebase"
+alias g="git"
+alias gst="git status"
+alias gcm="git commit -a -m "
+alias gaa="git add --all"
+alias gph="git push origin"
+alias gpl="git pull"
+alias gco="git checkout"
+alias gmr="git merge"
+alias grb="git rebase"
 
 # Complete Git Add,Commit,Push
-function gich {
+function gch {
   git add --all
   git commit -a -m "$1"
   git push
@@ -108,6 +120,7 @@ function gich {
 
 # Text Editor
 alias vi="nvim"
+alias e="code"
 alias vit="nvim --cmd 'cd $Text'"
 alias vig="nvim --cmd 'cd $Git'"
 alias vin="nvim --cmd 'cd $Git' $Git/Notebook/readme.md"
@@ -116,12 +129,6 @@ alias vid="nvim --cmd 'cd $Git' $Git/dotFiles/readme.md"
 alias vsc="nvim -S $Sessions/current.vim"
 alias vsd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias vsg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
-
-# Docusaurus
-function docuStart {
-  cd $Code/Main
-  npm run start
-}
 
 
 # ----------Docker Aliases--------------

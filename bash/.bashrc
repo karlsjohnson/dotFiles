@@ -1,7 +1,7 @@
 # source functions
-source $HOME/.config/bash/functions.sh
+source $Git/dotFiles/bash/functions.sh
 # source private config
-source $HOME/Documents/Text/Private/private.sh
+source $Git/Private/private.sh
 
 #============ Soource Files ===============
 source_custom aliases

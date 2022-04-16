@@ -1,10 +1,9 @@
 # Aliases
-alias scf="source ~/.config/bash/.bashrc"
+alias scf="source $Git/dotFiles/bash/.bashrc"
 # exa aliases instead of ls
 alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -a -l --group-directories-first'
-
 
 # Initial Aliases for All
 
@@ -62,8 +61,19 @@ alias pu="sudo chmod -R 700"
 
 # ----------Act Aliases--------------
 
-alias act='Bash ~/Documents/Text/Code/act.sh'
-alias gact='Bash ~/git/dotFiles/scripts/gitAct.sh'
+alias runx='chmod u+x'
+#alias act='Bash $Git/Private/bash/act.sh'
+# Docusaurus
+function b {
+  bash $1.sh $2 $3 $4 $5
+}
+
+alias mySync="rsync -ah --progress --delete --exclude-from $bash/rsync.txt"
+alias mySyncHD="rsync -ah --progress --delete --exclude-from $bash/rsyncHD.txt"
+alias mySyncPM="rsync -ah --progress --delete --exclude-from $bash/rsyncPM.txt"
+
+
+
 
 # ----------Program Aliases--------------
 
