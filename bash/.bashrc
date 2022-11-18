@@ -13,3 +13,5 @@ source_custom setttings
 echo "bashrc done for $sysType"
 
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -75,13 +75,13 @@ fi
 #--------------------------------------------
 
 # Add fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # set fuzzy autocomplete on seperate key
 # https://github.com/junegunn/fzf/wiki/Configuring-fuzzy-completion
-export FZF_COMPLETION_TRIGGER=''
-bindkey '^T' fzf-completion
+#export FZF_COMPLETION_TRIGGER=''
+#bindkey '^T' fzf-completion
 # not sure what this is
-bindkey '^I' $fzf_default_completion
+#bindkey '^I' $fzf_default_completion
 
 
 # add zoxide to shell
