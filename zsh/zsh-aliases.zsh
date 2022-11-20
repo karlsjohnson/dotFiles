@@ -120,6 +120,7 @@ function gch {
 
 # Text Editor
 alias vi="nvim"
+alias li="/Users/elecknight/.local/bin/lvim"
 alias e="code"
 alias vit="nvim --cmd 'cd $Text'"
 alias vig="nvim --cmd 'cd $Git'"

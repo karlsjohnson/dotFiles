@@ -15,3 +15,4 @@ echo "bashrc done for $sysType"
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"
