@@ -61,6 +61,7 @@ alias pu="sudo chmod -R 700"
 
 alias runx='chmod u+x'
 alias act='Bash $Git/Private/bash/act.sh'
+alias a='Bash $Git/Private/bash/act.sh'
 # Docusaurus
 function b {
   bash $1.sh $2 $3 $4 $5
