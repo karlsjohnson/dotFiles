@@ -84,6 +84,18 @@ alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -a -l --group --group-directories-first'
 
+#mdless
+
+alias md='mdless'
+alias mdl='mdless -l'
+alias mds='mdless -s'
+
+function mh {
+  mdless -l "$1"
+  MYVAR=""
+  vared -p 'User input: ' -c MYVAR
+  mdless -s $MYVAR "$1"
+}
 
 # zoxide (better cd)
 # brings up list of folders
