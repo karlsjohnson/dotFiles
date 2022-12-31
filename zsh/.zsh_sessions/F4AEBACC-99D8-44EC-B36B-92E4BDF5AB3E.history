@@ -1,329 +1,3 @@
-ssh-copy-id elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@omv.local
-ssh-keygen -e -f ~/.ssh/omv.pub
-ls
-rm sshacess
-ssh elecknight@omv.local  -i ~/.ssh/sshacess
-ssh elecknight@omv.local
-ssh elecknight@omv.local  -i ~/.ssh/sshaccess
-ssh-keygen -e -f ~/.ssh/omv.pub
-ssh elecknight@192.168.1.3 -i ~/.ssh/sshaccess
-ssh elecknight@192.168.1.3 -i ~/.ssh/omv
-la
-more config
-vim config
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-exit
-.ssh
-ssh-keygen -e -f omv.pub
-ssh-keygen -e -f
-ssh-keygen
-ssh-keygen -e -f omv.pub
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.4
-ssh elecknight@192.168.1.3
-exit
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@nuc.local
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-.ssh
-ls
-ssh-keygen -e -f id_rsa.pub
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh test@192.168.1.3
-ssh test@192.168.1.3
-ssh test@192.168.1.3
-ssh test@192.168.1.3
-ssh test@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh test@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh root@192.168.1.3
-ssh-keygen -e -f id_rsa.pub
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-ssh test@192.168.1.3
-ssh test@192.168.1.3
-exit
-exit
-z dotf
-gist
-gich "update links"
-gist
-gich "update links"
-z Pri
-gist
-gich "update start"
-z Mark
-gich "Blog Post"
-gist
-git push
-exit
-brew update
-exit
-ssh elecknight@192.168.1.3
-ssh elecknight@192.168.1.3
-exit
-ssh elecknight@192.168.1.4
-ssh elecknight@172.22.2.3
-ssh elecknight@172.22.2.3
-ssh elecknight@172.22.2.2
-ssh elecknight@172.22.2.2
-ssh root@172.22.2.2
-ssh root@172.22.2.2
-exit
-ssh root@172.22.2.133
-exit
-ssh root@172.22.2.4
-ssh root@172.22.2.4
-.ssh
-ls
-ssh-keygen -e -f id_rsa.pub > id_rsa_omv.pub
-more id_rsa_omv.pub
-ssh elecknight@172.22.2.4
-ssh elecknight@172.22.2.4
-ssh elecknight@172.22.2.4
-ssh elecknight@172.22.2.4
-ssh root@172.22.2.4
-ssh root@172.22.2.4
-ssh root@172.22.2.4
-ssh elecknight@172.22.2.4
-ssh elecknight@172.22.2.4
-exit
-scp elecknight@172.22.2.5:configs/karl.conf ~/
-exit
-ssh elecknight@172.22.2.5
-ssh elecknight@172.22.2.5
-ssh elecknight@172.22.2.5
-ssh root@172.22.2.5
-ssh elecknight@172.22.2.5
-curl -L https://install.pivpn.io | bash
-sudo curl -L https://install.pivpn.io | bash
-ssh elecknight@172.22.2.5
-ssh elecknight@172.22.2.5
-exit
-brew update && brew upgrade
-Hugo
-ls
-hugo new site new_site
-ls
-la
-cd new_site
-ls
-ls
-cd content
-ls
-..
-hugo new a.md
-hugo new dir/b.md
-hugo server -D
-hugo server -D
-hugo server -D
-hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
-hugo new post/first.md
-hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
-scp ~/.ssh/dhs.pub dh_b75s8k@iad1-shared-d12-01.dreamhost.com:
-ssh dhs
-exit
-brew update && brew upgrade
-brew install hugo
-hugo
-which hugo
-hugo version
-z Tex
-ls
-cd hugo
-hugo -help
-hugo completion
-hugo completion zsh
-hugo -help
-ls
-cd new_site
-git init
-git submodule add https://github.com/SteveLane/hugo-icon.git themes/hugo-icon
-hugo server -t hugo-icon --config themes/hugo-icon/exampleSite/config.toml
-ls
-ls
-hugo server
-hugo server
-hugo
-ls
-..
-hugo new karlsjohnson
-hugo new site karlsjohnson
-ls
-cd karlsjohnson
-cd karlsjohnson
-hugo server
-hugo server
-hugo server
-hugo server
-hugo server
-..
-..
-cd ..
-ls
-ls
-cd ..
-ls
-z Tex
-ls
-cd hugo
-ls
-hugo new site karlsjohnson
-karlsjohnson
-hugo server --source=exampleSite
-hugo server --source=exampleSite
-hugo server --source=themes/LoveIt/exampleSite
-hugo server
-hugo server
-hugo server
-..
-..
-z Text/hugo
-hugo new site karlsjohnson
-karlsjohnson
-hugo server
-hugo server
-hugo server
-hugo server
-hugo server
-z hugo
-ls
-hugo new site karlsjohnson
-karlsjohnson
-hugo server
-hugo server
-hugo new about.md
-hugo server
-hugo server
-hugo new post 3d printer
-hugo post 3d printer
-hugo new post/3d Printer
-hugo new posts/20220328-first_post.md
-hugo server
-hugo server
-hugo
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dh_u6c9by@karl.dreamhosters.com
-.ssh
-~/.ssh
-ssh-keygen -t dhs
-ssh-keygen -t
-ssh-keygen -t rsa
-ls -a
-rm dhs$'\033'\[D$'\033'\[D$'\033'\[D*
-la
-ssh-keygen -t rsa
-la
-scp ~/.ssh/id_rsa.pub dh_u6c9by@karl.dreamhosters.com:
-scp ~/.ssh/dhs.pub dh_u6c9by@karl.dreamhosters.com:
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dhs
-ssh dhs
-z Hugo
-karlsjohnson
-public
-pwd
-act bkDH
-ssh dhs
-ssh dh_asujht@ksj.dreamhosters.com
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dh_u6c9by@karl.dreamhosters.com
-ssh dh_asujht@ksj.dreamhosters.com
-ssh dh_asujht@ksj.dreamhosters.com
-scp ~/.ssh/dhs.pub dh_asujht@ksj.dreamhosters.com:
-ssh dh_asujht@ksj.dreamhosters.com
-ssh dh_asujht@ksj.dreamhosters.com
-ssh dhs
-ssh dhs
-act bkDH
-act bkDH
-ssh dh_b75s8k@iad1-shared-d12-01.dreamhost.com
-ssh dhs
-..
-hugo server
-hugo
-act bkDHS
-ssh dhs
-act bkDHS
-ssh dhs
-act upKSJ
-hugo server
-act upKSJ
-z dotf
-z hugo
-ssh elecknight@172.22.2.3
-ssh mm
-ssh mm
-z Priva
-gich "Start Link update"
-z karls
-hugo server
-act upKSJ
-scf
-mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock
-z priv
-gich "1Password CLI"
-git pull
-ssh -T git@github.com
-ssh -T git@github.com
-ssh -T git@github.com
-ssh dhs
-ssh-add -l
-~
-ls
-ls -a
-cd .1password
-ls
-ssh mm
-ssh-add -l
-ssh dhs
-ssh dhs
-ssh-keygen -e -f ~/.ssh/omv.pub
-~/.ssh
-ssh-keygen -t rsa
-ls
-ssh-keygen -e -f ~/.ssh/omv6.pub
-ls
-ssh elecknight@172.22.2.4
-ssh elecknight@172.22.2.4
-ssh omv
-ssh omv
-exit
-act bkSystem
-ssh omv
-ssh omv
-xi
-ssh omv
-ssh omv
-act bkCore
 act bkCore
 z hugo
 mkdir -p themes/hugo-geekdoc/
@@ -1011,4 +685,330 @@ bash
 bash
 exit
 which
+exit
+b ksj
+b bk
+scf
+echo $bash
+echo $path
+scf
+echo $path
+b bk
+b ksj
+b ksj
+b ngx
+b ngx
+b ngx
+b ngx
+b gh
+b gh push
+b gh push
+b gh pull
+z Pri
+gch "Update"
+b gh pull
+exit
+ssh vpn
+exit
+b bk
+scf
+b bk
+ssh omv
+b bk
+exit
+b bk
+scf
+b bk
+b bk
+b bk
+b bk
+b bk
+b bk
+exit
+ssh vpn
+exit
+b act
+scf
+b act bkpCloudMB
+b act bkpCloudMB
+b bk
+b act bkpCloudMB
+b bk
+exit
+b act bkSystem
+scf
+act bkSystem
+act bkSystem
+mySync ~/Library/Mobile\ Documents/ $Sync/AppData/MobileDocuments
+exit
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+scf
+ssh elecknight@192.168.1.4
+exit
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+cd ~/.s
+cd ~/.ssh
+ssh-keygen -t rsa
+ls
+scp ~/.ssh/id_rsa.pub elecknight@192.168.1.4
+scp ~/.ssh/id_rsa.pub elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+scp ~/.ssh/id_rsa.pub elecknight@192.168.1.4:~/.ssh
+ls
+ssh elecknight@192.168.1.4
+ssh mm
+ssh mm
+ssh mm
+ssh elecknight@192.168.1.4
+ssh mm
+ssh mm
+ssh mm
+ssh mm
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh-copy-id -i ~/.ssh/id_rsa elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh elecknight@192.168.1.4
+ssh mm
+ssh mm
+ssh mm
+ssh mm
+ssh elecknight@192.168.1.4
+exit
+which python
+brew install python
+python3 version
+cd git
+ls
+cd py
+python3 test.py
+python3 test.py
+exit
+brew start nginx
+brew update && brew upgrade
+sudo xcodebuild -license accept
+brew update && brew upgrade
+brew update && brew upgrade
+brew update && brew upgrade
+brew update && brew upgrade
+brew start nginx
+brew services start nginx
+brew services restart nginx
+brew services restart nginx
+brew update && brew upgrade
+brew update && brew upgrade
+brew update && brew upgrade
+brew update && brew upgrade
+brew update && brew upgrade
+exit
+printenv > /var/folders/sm/0j9jkqq544g1cy4_8k7q55dw0000gn/T/tmp-33599RAAkbdA4J4gRtxt
+ls
+z Git
+ls
+z py
+ls
+python3 test.py
+python3 test.py
+python3 test.py
+exit
+gh repo clone karlsjohnson/LearnCode
+z Git
+gh repo clone karlsjohnson/LearnCode
+ls
+cd dotf
+z dotf
+git status
+z Mark
+git status
+z markdownDoc
+git status
+z learn
+..
+z learnCode
+git status
+git commit .
+exit
+exit
+brew update && brew upgrade
+brew update && brew upgrade
+z learnCode
+python3 test.py
+gem install mdless
+sudo gem install mdless
+z Mark
+cd OS
+ls
+z Computer/OS
+ls
+mdless cmCLIMap.md
+gst
+z Git
+ls
+z dotF
+gst
+exit
+scf
+brew update && brew upgrade
+brew install make
+brew install pip
+python3 get-pip.py
+python3 -m ensurepip --upgrade
+python3 pip 
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade setuptools
+pp
+node
+brew install cargo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+scf
+.cargo
+ls
+cd bin
+ls
+scf
+LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+scf
+scf
+z .loca
+z ~/.local
+z bin
+ls
+lvim
+/Users/elecknight/.local/bin/lvim
+nvim
+scf
+li
+exit
+shmm
+shmm
+exit
+gch "Moving Files"
+z Markd
+gch "Moving Files"
+gst
+ls
+mdless cmCLI.md
+gpl
+exit
+exit
+tmux
+exit
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+a bk
+exit
+a bk
+a bk
+a bk
+exit
+shmm
+shmm
+a lrPl
+a
+a
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+cd mm:/Users/elecknight/Pictures/Lightroom
+ssh mm
+ssh mm
+a lrPl
+exit
+a lrPl
+a lrPl
+ssh mm
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+a lrPl
+ssh -t mm
+exit
+a lrPl
+a lrPl
+a lrPl
+a plmm
+a plmm
+a plmm
+a plmm
+a plmm
+a plmm
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl
+a pl\ 
+a pl\ 
+a pl
+a pl
+a pl
+a pl
+a pl
+exit
+a push
+a push
+exit
+ssh dhs
+a
+a update
+a update
+exit
+a push
+exit
+ssh dhs
+a hugo
+exit
+z mark
+ls
+ll
+mh cmLearn.md
+ll
+md cmL
+md cmLearn.md
+md Temp.md
+exit
+a pull
+exit
+a pull
+a pull
+a pull
+exit
+a pull
+a pull
+a pull
+exit
+a pull
+ssh mm
+a pull
+exit
 exit
