@@ -25,7 +25,7 @@ export Sync=$HOME/Sync
 
 # Set Paths
 # Normal: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=~/.cargo/bin:$bash:$PATH
+export PATH=~/.cargo/bin:$bash:~/Library/Python/3.9/bin:$PATH
 # Used when running homwbrew in intel/m1 state
 #export PATH=/opt/homebrew/bin:$PATH
 
