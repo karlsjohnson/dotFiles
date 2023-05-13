@@ -1,6 +1,6 @@
 # Initial Aliases for All
 
-# ----------Standard Tool Aliases--------------
+# ----------System Aliases--------------
 
 # Source init files
 function scf {
@@ -9,20 +9,28 @@ function scf {
 }
 #alias scf=". ~/.config/zsh/.zshrc"
 #alias dcd="rm $ZDOTDIR/.zcompdump"
-alias ezsh="exec zsh"
-
-# Copy Path to Clipboard
-alias cpath="pwd|pbcopy"
+alias ecf="exec zsh"
 
 # Reboot or shutdown
-alias shutdown="sudo shutdown -P now"
-alias reboot="sudo shutdown -r now"
+alias sdown="sudo shutdown -P now"
+alias rboot="sudo shutdown -r now"
+
+
+# Size of Disks on Computer
+alias dsize="df -h"
+
+
+# ----------Directory Aliases--------------
 
 # List Files
 #alias la='ls -a'
 #alias ll="ls -lha"
 #alias lls="ls -lhSa"
 #alias llt="ls -lhta"
+
+# Copy Path to Clipboard
+alias cpath="pwd|pbcopy"
+
 
 # Remove Folder by Force
 alias rmd='rm -rf'
@@ -34,15 +42,12 @@ alias cpd='rsync -ah --progress '
 # Copy Files
 alias cp='cp -f'
 
-# Size of Disks on Computer
-alias dsize="df -h"
-
 # Size of items in currently directory
 alias fsize="du -hsc *"
 
 # View tree with level set at $1 (First augument)
 # tree --du -h -L 2, is 2 levels deep
-alias fdtree="tree --du -h -L"
+alias fdtree="tree --du -h -L 2"
 
 
 # ----------User Aliases--------------
@@ -60,16 +65,7 @@ alias pu="sudo chmod -R 700"
 # ----------Bash Aliases--------------
 
 alias runx='chmod u+x'
-alias act='Bash $Git/Private/bash/act.sh'
 alias a='Bash $Git/Private/bash/act.sh'
-# Docusaurus
-function b {
-  bash $1.sh $2 $3 $4 $5
-}
-
-alias mySync="rsync -ah --progress --delete --exclude-from $bash/rsync.txt"
-alias mySyncHD="rsync -ah --progress --delete --exclude-from $bash/rsyncHD.txt"
-alias mySyncPM="rsync -ah --progress --delete --exclude-from $bash/rsyncPM.txt"
 
 
 
@@ -143,6 +139,12 @@ alias vid="nvim --cmd 'cd $Git' $Git/dotFiles/readme.md"
 alias vsc="nvim -S $Sessions/current.vim"
 alias vsd="nvim -S $Sessions/dotfiles.vim --cmd 'cd $Git'"
 alias vsg="nvim -S $Sessions/git.vim --cmd 'cd $Git'"
+
+
+# ----------Python Aliases--------------
+alias py="python3"
+alias pip="pip3"
+alias pyl="pip3 list"
 
 
 # ----------Docker Aliases--------------
