@@ -86,7 +86,7 @@ alias md='mdless'
 alias mdl='mdless -l'
 alias mds='mdless -s'
 
-function mh {
+function mdh {
   mdless -l "$1"
   MYVAR=""
   vared -p 'User input: ' -c MYVAR

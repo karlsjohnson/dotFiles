@@ -8,7 +8,7 @@ alias astart="sudo fdesetup authrestart"
 # login remotly to apple keychain
 alias alogin="security -v unlock-keychain ~/Library/Keychains/login.keychain-db"
 
-function macUpdate {
+function mup {
   echo "brew update starting"
   brew update
   brew upgrade
