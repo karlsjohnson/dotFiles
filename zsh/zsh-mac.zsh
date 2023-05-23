@@ -8,14 +8,6 @@ alias astart="sudo fdesetup authrestart"
 # login remotly to apple keychain
 alias alogin="security -v unlock-keychain ~/Library/Keychains/login.keychain-db"
 
-function mup {
-  echo "brew update starting"
-  brew update
-  brew upgrade
-  brew cleanup
-  echo "brew update complete"
-}
-
 # Turn dock delay show to 5 seconds
 alias dockoff="defaults write com.apple.Dock autohide-delay -float 5 && killall Dock"
 # Turn dock on no delay

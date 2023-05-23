@@ -93,10 +93,6 @@ function mdh {
   mdless -s $MYVAR "$1"
 }
 
-# zoxide (better cd)
-# brings up list of folders
-alias zz='zi'
-
 # Tmux
 alias tmsc="tmux source-file ~/.tmux.conf"
 alias tm="tmux"
