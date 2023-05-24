@@ -15,12 +15,10 @@ HISTFILE=$ZDOTDIR/.zsh_history
 export Documents=$HOME/Documents
 export Backup=$Documents/Backup
 export Text=$Documents/Text
-export Code=$Documents/Text/Code
 export Downloads=$HOME/Sync/Downloads
 export Git=$HOME/Git
 export bash=$Git/Private/bash
 export DOT=$Git/dotfiles
-export Zips=$HOME/Sync/AppData/Zips
 export Sync=$HOME/Sync
 
 # Set Paths
