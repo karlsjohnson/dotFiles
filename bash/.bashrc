@@ -1,21 +1,9 @@
 
 #==================================================
-#============ Sournce Private Info ===============
+#============ Source Private Info ===============
 #==================================================
 
 source $Git/Private/private.sh
-
-#==================================================
-#================= Functions ======================
-#==================================================
-
-function source_file() {
-    [ -f "$1" ] && source "$1"
-}
-
-function source_custom() {
-    [ -f "$Git/dotFiles/bash/$1.sh" ] && source "$Git/dotFiles/bash/$1.sh"
-}
 
 #==================================================
 #================== aliases =======================
@@ -28,22 +16,12 @@ alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -a -l --group-directories-first'
 
-# Source init files
-alias szsh=". ~/.config/zsh/.zshrc"
-alias ezsh="exec zsh"
-
 # Copy Path to Clipboard
 alias cpath="pwd|pbcopy"
 
 # Reboot or shutdown
 alias shutdown="sudo shutdown -P now"
 alias reboot="sudo shutdown -r now"
-
-# List Files
-alias la='ls -a'
-alias ll="ls -lha"
-alias lls="ls -lhSa"
-alias llt="ls -lhta"
 
 # Remove Folder by Force
 alias rmd='rm -rf'
@@ -55,32 +33,18 @@ alias cpd='rsync -ah --progress '
 # Copy Files
 alias cp='cp -f'
 
-# Size of Disks on Computer
-alias dsize="df -h"
+#Act Aliases
 
-# Size of items in currently directory
-alias fsize="du -hsc *"
-
-# View tree with level set at $1 (First augument)
-# tree --du -h -L 2, is 2 levels deep
-alias fdtree="tree --du -h -L"
-
-# ----------Act Aliases--------------
-
-alias runx='chmod u+x'
 alias a='Bash $Git/Private/bash/act.sh'
-
-# ----------Program Aliases--------------
-
-# Update plugins
-alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 
 #exa
 alias ls='exa --icons --group-directories-first'
 alias la='exa --icons -a --group-directories-first'
 alias ll='exa --icons -a -l --group-directories-first'
 
-#============ Settings ===============
+#==================================================
+#===================== Settings ===================
+#==================================================
 
 
 

@@ -96,7 +96,3 @@ eval "$(fnm env)"
 #Old way: test -e "${ZDOTDIR}/zsh-aliases" && source "${ZDOTDIR}/zsh-aliases"
 #zsh_add_file ".iterm2_shell_integration.zsh"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Add VScode to CLI via path
-#export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
