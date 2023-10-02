@@ -1,17 +1,21 @@
 # This is the config files for my zsh shell.
 # Right now, this is mainly on the Mac, but I plan to expand this to Linux
+
 # Load Functions
 source "$ZDOTDIR/zsh-functions.zsh"
+# Load Aliases
+source "$ZDOTDIR/zsh-aliases.zsh"
+# Load Private Config
+source "$HOME/Git/Private/zsh-private.zsh"
+# Load Enviromental Variables
+source "$ZDOTDIR/zsh-env.zsh"
+# Load Settings
+source "$ZDOTDIR/zsh-settings.zsh"
 
-# Load config files
-source_config env
-source_private private
-source_config settings
-source_config aliases
+# Load Mac config (Mac Only)
+[[ "$hostOS" = "Darwin" ]] && source "$ZDOTDIR/zsh-mac.zsh"
 
-# Load mac only config files
-[[ "$hostOS" = "Darwin" ]] && source_config mac
-
-echo "My Initialization Process For $hostName  Complete"
+# Complete notification
+echo "My Initialization Process For $hostName Complete"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
