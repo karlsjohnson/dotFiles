@@ -3,14 +3,14 @@
 
 # Load Functions
 source "$ZDOTDIR/zsh-functions.zsh"
-# Load Aliases
-source "$ZDOTDIR/zsh-aliases.zsh"
-# Load Private Config
-source "$HOME/Git/Private/zsh-private.zsh"
 # Load Enviromental Variables
 source "$ZDOTDIR/zsh-env.zsh"
+# Load Aliases
+source "$ZDOTDIR/zsh-aliases.zsh"
 # Load Settings
 source "$ZDOTDIR/zsh-settings.zsh"
+# Load Private Config
+source "$HOME/Git/Private/zsh-private.zsh"
 
 # Load Mac config (Mac Only)
 [[ "$hostOS" = "Darwin" ]] && source "$ZDOTDIR/zsh-mac.zsh"
